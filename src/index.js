@@ -28,7 +28,7 @@ import Startup from './pages/startup';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename='/build_website'>
     {/* <App /> */}
     <Routes>
       <Route path="/" element={<Marketing />} />
