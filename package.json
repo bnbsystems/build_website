@@ -2,7 +2,7 @@
   "name": "motos",
   "version": "1.0.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://bnbsystems.github.io/build_website/",
   "start_url": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
