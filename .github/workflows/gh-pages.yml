@@ -30,7 +30,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - run: npm ci
-      - run: CI=false && react-scripts build
+      - run: CI=false && npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
