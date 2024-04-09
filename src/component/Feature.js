@@ -10,36 +10,38 @@ export default function Feature() {
         {
             id: 'service1',
             icon: 'airplay',
-            title: "Design & Development",
-            description: "Various versions have evolved over the years, sometimes by on purpose injected humour and the like."
+            title: "Productivity",
+            description: "Automate boring, repetitive tasks by integrating CI/CD piepline into your projects."
         },
         {
             id: 'service2',
             icon: 'circle-layer',
-            title: "Management & Marketing",
-            description: 'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est'
+            title: "Reduced downtime",
+            description: 'Allow developers to build projects in consistent and reproducible build environment outside of their personal workspace.'
         },
         {
             id: 'service3',
             icon: 'fire',
-            title: "Stratagy & Research",
-            description: 'Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias'
+            title: "Scalability ",
+            description: 'Scale build infrastructure according to your needs. Build your Godot projects in parallel for different platforms.'
         },
         {
             id: 'service4',
             icon: 'flip-h',
-            title: "Easy To Use",
-            description: 'On the other hand, we denounce with righteous indignation and dislike men who are so beguiled'
-        }, {
+            title: "Enhanced game quality",
+            description: 'Increase quality of your games by frequent builds and automated tests, allowing for faster bug fixes.'
+        }, 
+        {
             id: 'service5',
             icon: 'mountains',
-            title: "Daily Reports",
-            description: 'Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain'
-        }, {
+            title: "Collaboration",
+            description: 'Get notification on build status and new releases. Promote communication, reviewing changes in centrilized platform which provides detailed logs and audit trails of deployments.'
+        },
+        {
             id: 'service6',
             icon: 'wind',
-            title: "Real Time Zone",
-            description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+            title: "Cost efficiency",
+            description: 'Reduce infrastructure costs. Pay only for what you need.'
         },
     ]
 
@@ -47,12 +49,52 @@ export default function Feature() {
         <>
             {/*  Services START  */}
             <section className="section" id="features">
-                <Container>
+                <Container className="mt-100 mt-60">
+                    <Row className="align-items-center">
+                        <Col lg={6} md={6}>
+                            <img src={Feature1} className="img-fluid shadow-md rounded-md" alt="" />
+                        </Col>
+
+                        <Col lg={6} md={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
+                            <div className="section-title ms-lg-5">
+                                <h4 className="title mb-4">Easy to setup CI/CD piepline</h4>
+                                <p className="text-muted">Unlock the power of continuous integration and continuous delivery without the hassle of complex setup processes. Our CI/CD pipeline is designed with simplicity and ease of integration in mind, enabling you to streamline your development workflow effortlessly.</p>
+                                {/* <ul className="list-unstyled text-muted">
+                                    <li className="mb-1"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Digital Marketing Solutions for Tomorrow</li>
+                                    <li className="mb-1"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Create your own skin to match your brand</li>
+                                </ul> */}
+                                <Link to="#" className="mt-3 text-primary">Learn more<i className="uil uil-angle-right-b"></i></Link>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+
+                <Container className="mt-100 mt-60">
+                    <Row className="align-items-center">
+                        <Col lg={6} md={6} className="order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                            <div className="section-title me-lg-5">
+                                <h4 className="title mb-4">Scale build infrastructure to your need</h4>
+                                <p className="text-muted">Empower your development team to innovate and scale without limitations. With our platform, you can effortlessly scale your build infrastructure to match your evolving needs, ensuring optimal performance and efficiency at every stage of your development lifecycle.</p>
+                                {/* <ul className="list-unstyled text-muted">
+                                    <li className="mb-1"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Digital Marketing Solutions for Tomorrow</li>
+                                    <li className="mb-1"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Create your own skin to match your brand</li>
+                                </ul> */}
+                                <Link to="#" className="mt-3 text-primary">Learn more<i className="uil uil-angle-right-b"></i></Link>
+                            </div>
+                        </Col>
+
+                        <Col lg={6} md={6} className="order-1 order-md-2">
+                            <img src={Feature2} className="img-fluid shadow-md rounded-md" alt="" />
+                        </Col>
+                    </Row>
+                </Container>
+
+                <Container className="mt-5">
                     <Row className="justify-content-center">
                         <div className="col-12">
                             <div className="section-title text-center mb-4 pb-2">
-                                <h3 className="title mb-3">Our Features</h3>
-                                <p className="text-muted mx-auto para-desc mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
+                                <h3 className="title mb-3">Key features</h3>
+                                <p className="text-muted mx-auto para-desc mb-0">Develop games faster by optimizing CI/CD pipeline and developement process.</p>
                             </div>
                         </div>
                     </Row>
@@ -76,7 +118,7 @@ export default function Feature() {
                     </Row>
                 </Container>
 
-                <Container className="mt-100 mt-60">
+                {/* <Container className="mt-100 mt-60">
                     <Row>
                         <Col lg={5}>
                             <div className="section-title">
@@ -88,47 +130,7 @@ export default function Feature() {
                             <p className="text-muted para-desc mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
                         </Col>
                     </Row>
-                </Container>
-
-                <Container className="mt-100 mt-60">
-                    <Row className="align-items-center">
-                        <Col lg={6} md={6}>
-                            <img src={Feature1} className="img-fluid shadow-md rounded-md" alt="" />
-                        </Col>
-
-                        <Col lg={6} md={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
-                            <div className="section-title ms-lg-5">
-                                <h4 className="title mb-4">Great Product Analytics With Real Problem</h4>
-                                <p className="text-muted">Due to its widespread use as filler text for layouts, non-readability is of great importance: human perception is tuned to recognize certain patterns and repetitions in texts. If the distribution of letters visual impact.</p>
-                                <ul className="list-unstyled text-muted">
-                                    <li className="mb-1"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Digital Marketing Solutions for Tomorrow</li>
-                                    <li className="mb-1"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Create your own skin to match your brand</li>
-                                </ul>
-                                <Link to="#" className="mt-3 text-primary">Find Out More <i className="uil uil-angle-right-b"></i></Link>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-
-                <Container className="mt-100 mt-60">
-                    <Row className="align-items-center">
-                        <Col lg={6} md={6} className="order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                            <div className="section-title me-lg-5">
-                                <h4 className="title mb-4">Get Notified About Importent Email</h4>
-                                <p className="text-muted">This prevents repetitive patterns from impairing the overall visual impression and facilitates the comparison of different typefaces. Furthermore, it is advantageous when the dummy text is relatively realistic.</p>
-                                <ul className="list-unstyled text-muted">
-                                    <li className="mb-1"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Digital Marketing Solutions for Tomorrow</li>
-                                    <li className="mb-1"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Create your own skin to match your brand</li>
-                                </ul>
-                                <Link to="#" className="mt-3 text-primary">Find Out More <i className="uil uil-angle-right-b"></i></Link>
-                            </div>
-                        </Col>
-
-                        <Col lg={6} md={6} className="order-1 order-md-2">
-                            <img src={Feature2} className="img-fluid shadow-md rounded-md" alt="" />
-                        </Col>
-                    </Row>
-                </Container>
+                </Container> */}
             </section>
         </>
     )

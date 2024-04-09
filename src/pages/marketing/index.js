@@ -32,16 +32,16 @@ export default function Marketing() {
                         <Row className="mt-5 pt-5 justify-content-center">
                             <div className="col-lg-12 text-center mt-0 mt-md-5 pt-0 pt-md-5">
                                 <div className="title-heading">
-                                    <h4 className="heading my-3">Solve Problem With on Integrated <br /> Marketing Agency</h4>
-                                    <p className="para-desc mx-auto text-muted">Explore and learn more about everything from machine learning and global payments to  scaling your team.</p>
+                                    <h4 className="heading my-3">Godot Build Server</h4>
+                                    <p className="para-desc mx-auto text-muted">Explore build automation solutions for your Godot projects.</p>
                                 </div>
 
-                                <div className="text-center subcribe-form mt-4 pt-2">
+                                {/* <div className="text-center subcribe-form mt-4 pt-2">
                                     <form>
                                         <input type="url" id="url" className="border bg-white rounded-lg" style={{ opacity: "0.85" }} required placeholder="https://shreethemes.in" />
                                         <button type="submit" className="btn btn-pills btn-primary">Get Started</button>
                                     </form>
-                                </div>
+                                </div> */}
 
                                 <Row className="justify-content-center">
                                     <Col lg={7} md={10}>
@@ -62,7 +62,7 @@ export default function Marketing() {
                 <section className="mt-5 pt-md-5">
                     <Container>
                         <Row className="row justify-content-center">
-                            <Col lg={2} md={2} className="col-6 text-center py-4 py-sm-0">
+                            {/* <Col lg={2} md={2} className="col-6 text-center py-4 py-sm-0">
                                 <img src={AmazonImage} className="avatar avatar-ex-sm" alt="" />
                             </Col>
 
@@ -84,14 +84,14 @@ export default function Marketing() {
 
                             <Col lg={2} md={2} className="col-6 text-center py-4 py-sm-0">
                                 <img src={SpotifyImage} className="avatar avatar-ex-sm" alt="" />
-                            </Col>
+                            </Col> */}
                         </Row>
                     </Container>
                 </section>
 
                 <Feature />
                 <Pricing />
-                <Review />
+                {/* <Review /> */}
                 <News />
                 <Contact />
                 <Footer />
