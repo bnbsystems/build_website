@@ -39,7 +39,7 @@ export default function Pricing() {
                         <div className="col-12">
                             <div className="section-title text-center mb-4 pb-2">
                                 <h4 className="title fw-semibold mb-4">Pricing Plans</h4>
-                                <p className="para-desc text-muted mx-auto mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
+                                <p className="para-desc text-muted mx-auto mb-0">Select the pricing plan tailored to your requirements.</p>
                             </div>
                         </div>
                     </Row>

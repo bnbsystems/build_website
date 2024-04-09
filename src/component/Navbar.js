@@ -57,9 +57,9 @@ export default function NavbarPage() {
                             <NavItem>
                                 <Link activeClass="active" spy={true} smooth={true} duration={500} to="pricing" className="nav-link" href="#">Pricing</Link>
                             </NavItem>
-                            <NavItem>
+                            {/* <NavItem>
                                 <Link activeClass="active" spy={true} smooth={true} duration={500} to="review" className="nav-link" href="#">Review</Link>
-                            </NavItem>
+                            </NavItem> */}
                             <NavItem>
                                 <Link activeClass="active" spy={true} smooth={true} duration={500} to="blog" className="nav-link" href="#">News</Link>
                             </NavItem>

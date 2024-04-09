@@ -11,8 +11,8 @@ export default function Contact() {
                     <Row className="justify-content-center">
                         <Col>
                             <div className="section-title text-center mb-4 pb-2">
-                                <h4 className="title mb-3">Get In Touch !</h4>
-                                <p className="text-muted para-desc mb-0 mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
+                                <h4 className="title mb-3">Contact us</h4>
+                                <p className="text-muted para-desc mb-0 mx-auto">Get in touch with us to consult soultion that will meet your needs.</p>
                             </div>
                         </Col>
                     </Row>
@@ -66,7 +66,7 @@ export default function Contact() {
 
                                     <div className="flex-1 ms-3">
                                         <h5 className="mb-2">Phone</h5>
-                                        <Link to="tel:+152534-468-854" className="text-muted">+152 534-468-854</Link>
+                                        {/* <Link to="tel:+152534-468-854" className="text-muted">+152 534-468-854</Link> */}
                                     </div>
                                 </div>
 
@@ -77,7 +77,7 @@ export default function Contact() {
 
                                     <div className="flex-1 ms-3">
                                         <h5 className="mb-2">Email</h5>
-                                        <Link to="mailto:contact@example.com" className="text-muted">contact@example.com</Link>
+                                        {/* <Link to="mailto:contact@example.com" className="text-muted">contact@example.com</Link> */}
                                     </div>
                                 </div>
 
@@ -88,7 +88,7 @@ export default function Contact() {
 
                                     <div className="flex-1 ms-3">
                                         <h5 className="mb-2">Location</h5>
-                                        <p className="text-muted mb-2">C/54 Northwest Freeway, Suite 558, Houston, USA 485</p>
+                                        {/* <p className="text-muted mb-2">C/54 Northwest Freeway, Suite 558, Houston, USA 485</p> */}
                                     </div>
                                 </div>
                             </div>
