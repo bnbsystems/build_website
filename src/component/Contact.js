@@ -1,8 +1,35 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { Col, Container, Row } from "reactstrap";
 import { Link } from "react-router-dom";
 
+const submitUrl = '';
 export default function Contact() {
+    const [formState, setFormState] = useState({})
+    const updateFormField = (e) => {
+        const state = { 
+            ...formState,
+            [e.target.name]: e.target.value
+        }
+
+        setFormState(state)
+    }
+
+    const onSubmit = (e) => {
+        e.preventDefault()
+
+        const request ={
+            headers: {
+                "content-type": "application/json; charset=UTF-8"
+            },
+            body: JSON.stringify(formState),
+            method: "POST"
+        }
+        if(typeof submitUrl !== 'string' || submitUrl.trim().length === 0){
+            return
+        }
+        fetch(submitUrl, request)
+    }
+
     return (
         <>
             {/* Start Contact  */}
@@ -20,31 +47,31 @@ export default function Contact() {
                     <Row className="align-items-center">
                         <Col lg={8} md={6} className="order-md-2 order-1 mt-4 pt-2">
                             <div className="p-4 rounded shadow bg-white">
-                                <form method="post" name="myForm">
+                                <form onSubmit={onSubmit} name="myForm">
                                     <p className="mb-0" id="error-msg"></p>
                                     <div id="simple-msg"></div>
                                     <Row>
                                         <Col md={6}>
                                             <div className="mb-4">
-                                                <input name="name" id="name" type="text" className="form-control" placeholder="Name :" />
+                                                <input onChange={updateFormField} name="name" id="name" type="text" className="form-control" placeholder="Name :" required />
                                             </div>
                                         </Col>
 
                                         <Col md={6} >
                                             <div className="mb-4">
-                                                <input name="email" id="email" type="email" className="form-control" placeholder="Email :" />
+                                                <input onChange={updateFormField} name="email" id="email" type="email" className="form-control" placeholder="Email :" required />
                                             </div>
                                         </Col>
 
                                         <div className="col-12">
                                             <div className="mb-4">
-                                                <input name="subject" id="subject" className="form-control" placeholder="Subject :" />
+                                                <input onChange={updateFormField} name="subject" id="subject" className="form-control" placeholder="Subject :" required />
                                             </div>
                                         </div>
 
                                         <div className="col-12">
                                             <div className="mb-4">
-                                                <textarea name="comments" id="comments" rows={4} className="form-control" placeholder="Message :"></textarea>
+                                                <textarea onChange={updateFormField} name="message" id="message" rows={4} className="form-control" placeholder="Message :" required />
                                             </div>
                                         </div>
                                     </Row>
