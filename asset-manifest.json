@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/build_website/static/css/main.fd641a10.css",
-    "main.js": "/build_website/static/js/main.0d8e3e6f.js",
+    "main.js": "/build_website/static/js/main.73f75c27.js",
     "static/js/787.9753de6f.chunk.js": "/build_website/static/js/787.9753de6f.chunk.js",
     "static/media/materialdesignicons-webfont.svg?v=3.5.94": "/build_website/static/media/materialdesignicons-webfont.650dd4760015711234df.svg",
     "static/media/2.jpg": "/build_website/static/media/2.f5d1f51cb56ca2c8fcf6.jpg",
@@ -53,11 +53,11 @@
     "static/media/lenovo.svg": "/build_website/static/media/lenovo.b0f22f8b71ec4c51e6a8e2b10a85b998.svg",
     "index.html": "/build_website/index.html",
     "main.fd641a10.css.map": "/build_website/static/css/main.fd641a10.css.map",
-    "main.0d8e3e6f.js.map": "/build_website/static/js/main.0d8e3e6f.js.map",
+    "main.73f75c27.js.map": "/build_website/static/js/main.73f75c27.js.map",
     "787.9753de6f.chunk.js.map": "/build_website/static/js/787.9753de6f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fd641a10.css",
-    "static/js/main.0d8e3e6f.js"
+    "static/js/main.73f75c27.js"
   ]
 }
