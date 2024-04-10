@@ -1,10 +1,22 @@
-import React, { Component, useState } from "react";
+import React, { Component, useCallback, useEffect, useState } from "react";
 import { Col, Container, Row } from "reactstrap";
 import { Link } from "react-router-dom";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 const submitUrl = `${process.env.REACT_APP_API_URL}/contact`;
 export default function Contact() {
     const [formState, setFormState] = useState({})
+    const { executeRecaptcha } = useGoogleReCaptcha();
+
+    const handleReCaptchaVerify = useCallback(async () => {
+        if (!executeRecaptcha) {
+          return;
+        }
+        const token = await executeRecaptcha('submit');
+    
+        return token;
+      }, [executeRecaptcha]);
+
     const updateFormField = (e) => {
         const state = { 
             ...formState,
@@ -14,13 +26,16 @@ export default function Contact() {
         setFormState(state)
     }
 
-    const onSubmit = (e) => {
+    const onSubmit = async (e) => {
         e.preventDefault()
-
+        const token = await handleReCaptchaVerify()
         const request ={
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formState),
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({
+                ...formState, 
+                recaptchaToken: token
+            }),
         }
         if(typeof submitUrl !== 'string' || submitUrl.trim().length === 0){
             return
@@ -32,6 +47,10 @@ export default function Contact() {
 
             })
     }
+
+    useEffect( () => {
+        handleReCaptchaVerify();
+      }, [handleReCaptchaVerify]);
 
     return (
         <>
@@ -46,7 +65,7 @@ export default function Contact() {
                             </div>
                         </Col>
                     </Row>
-
+                    
                     <Row className="align-items-center">
                         <Col lg={8} md={6} className="order-md-2 order-1 mt-4 pt-2">
                             <div className="p-4 rounded shadow bg-white">
