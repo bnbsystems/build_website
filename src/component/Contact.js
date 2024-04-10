@@ -2,7 +2,7 @@ import React, { Component, useState } from "react";
 import { Col, Container, Row } from "reactstrap";
 import { Link } from "react-router-dom";
 
-const submitUrl = '';
+const submitUrl = `${process.env.REACT_APP_API_URL}/contact`;
 export default function Contact() {
     const [formState, setFormState] = useState({})
     const updateFormField = (e) => {
@@ -18,16 +18,19 @@ export default function Contact() {
         e.preventDefault()
 
         const request ={
-            headers: {
-                "content-type": "application/json; charset=UTF-8"
-            },
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formState),
-            method: "POST"
         }
         if(typeof submitUrl !== 'string' || submitUrl.trim().length === 0){
             return
         }
-        fetch(submitUrl, request)
+        fetch(submitUrl, request).then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }}).catch(error =>{
+
+            })
     }
 
     return (
