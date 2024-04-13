@@ -246,6 +246,28 @@ button:not(:disabled) {
     }
 }
 
+.checkbox-field {
+  margin-top: 1rem !important;;
+  white-space: nowrap;
+  label{
+    white-space: normal;
+    display:inline-block !important;
+    padding: 0.25rem;
+  }
+}
+
+.checkbox {
+    width: 15px;
+    height: 15px;
+}
+
+.divider {
+    width: 1rem; /* Set the width */
+    height: 0; /* Set height to 0 */
+    // overflow: hidden; /* Hide any content overflow */
+    visibility: hidden; /* Hide the element */
+    display: inline-block; /* Ensure the element occupies space */
+}
 
 .form-check-input {
     border: 1px solid $gray-300;

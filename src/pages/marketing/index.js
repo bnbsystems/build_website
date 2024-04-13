@@ -17,6 +17,7 @@ import LenovoImage from '../../assets/images/client/lenovo.svg';
 import PaypalImage from '../../assets/images/client/paypal.svg';
 import ShopifyImage from '../../assets/images/client/shopify.svg';
 import SpotifyImage from '../../assets/images/client/spotify.svg';
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 /**
  * Marketing component
@@ -24,6 +25,7 @@ import SpotifyImage from '../../assets/images/client/spotify.svg';
 export default function Marketing() {
     return (
         <>
+        <GoogleReCaptchaProvider reCaptchaKey={process.env.REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY}>
             <div>
                 <Navbar />
 
@@ -97,6 +99,7 @@ export default function Marketing() {
                 <Footer />
 
             </div>
+            </GoogleReCaptchaProvider>
         </>
     )
 }
