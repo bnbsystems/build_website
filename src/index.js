@@ -28,7 +28,7 @@ import Startup from './pages/startup';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <StrictMode>
+  <React.StrictMode>
     <BrowserRouter basename='/build_website'>
       {/* <App /> */}
       <Routes>
@@ -52,7 +52,7 @@ root.render(
         <Route path="/auth-reset-password" element={<ResetPassword />} />
       </Routes>
     </BrowserRouter>
-  </StrictMode>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
