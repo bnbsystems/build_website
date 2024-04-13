@@ -28,29 +28,31 @@ import Startup from './pages/startup';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <BrowserRouter basename='/build_website'>
-    {/* <App /> */}
-    <Routes>
-      <Route path="/" element={<Marketing />} />
-      <Route path="/marketing" element={<Marketing />} />
-
-      <Route path="/agency" element={<Agency />} />
-      <Route path="/portfolio" element={<Portfolio />} />
-      <Route path="/personal" element={<Personal />} />
-      <Route path="/startup" element={<Startup />} />
-
-      <Route path="/saas" element={<Saas />} />
-
-      <Route path="/maintenance" element={<Maintenance />} />
-      <Route path="/error" element={<Error />} />
-      <Route path="/auth-login" element={<Login />} />
-      <Route path="/auth-signup" element={<Signup />} />
-      
-      <Route path="/comingsoon" element={<Comingsoon />} />
-      
-      <Route path="/auth-reset-password" element={<ResetPassword />} />
-    </Routes>
-  </BrowserRouter>
+  <StrictMode>
+    <BrowserRouter basename='/build_website'>
+      {/* <App /> */}
+      <Routes>
+        <Route path="/" element={<Marketing />} />
+        <Route path="/marketing" element={<Marketing />} />
+  
+        <Route path="/agency" element={<Agency />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/personal" element={<Personal />} />
+        <Route path="/startup" element={<Startup />} />
+  
+        <Route path="/saas" element={<Saas />} />
+  
+        <Route path="/maintenance" element={<Maintenance />} />
+        <Route path="/error" element={<Error />} />
+        <Route path="/auth-login" element={<Login />} />
+        <Route path="/auth-signup" element={<Signup />} />
+        
+        <Route path="/comingsoon" element={<Comingsoon />} />
+        
+        <Route path="/auth-reset-password" element={<ResetPassword />} />
+      </Routes>
+    </BrowserRouter>
+  </StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
