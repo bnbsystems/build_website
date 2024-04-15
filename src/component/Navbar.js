@@ -61,17 +61,17 @@ export default function NavbarPage() {
                                 <Link activeClass="active" spy={true} smooth={true} duration={500} to="review" className="nav-link" href="#">Review</Link>
                             </NavItem> */}
                             <NavItem>
-                                <Link activeClass="active" spy={true} smooth={true} duration={500} to="blog" className="nav-link" href="#">News</Link>
+                                <Link activeClass="active" spy={true} smooth={true} duration={500} to="blog" className="nav-link" href="#">Articles</Link>
                             </NavItem>
                             <NavItem>
                                 <Link activeClass="active" spy={true} smooth={true} duration={500} to="contact" className="nav-link" href="#">Contact Us</Link>
                             </NavItem>
                         </Nav>
 
-                        <ul className="list-inline menu-social mb-0 ps-lg-4 ms-2">
+                        {/* <ul className="list-inline menu-social mb-0 ps-lg-4 ms-2">
                             <li className="list-inline-item"><Link2 to="/auth-login" className="text-dark fw-semibold text-uppercase small">Login</Link2></li>
                             <li className="list-inline-item ms-2"><Link2 to="/auth-signup" className="btn btn-primary text-uppercase">Sign Up</Link2></li>
-                        </ul>
+                        </ul> */}
                     </Collapse>
                 </div>
             </nav>

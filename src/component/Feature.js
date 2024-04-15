@@ -2,8 +2,8 @@ import React from "react";
 import { Col, Container, Card, Row } from "reactstrap";
 import { Link } from "react-router-dom";
 
-import Feature1 from "../assets/images/1.png";
-import Feature2 from "../assets/images/2.png";
+import ServerImage from '../assets/images/main_page/server-2.jpg'
+import TeamImage from '../assets/images/main_page/team.jpg'
 
 export default function Feature() {
     const services = [
@@ -52,7 +52,7 @@ export default function Feature() {
                 <Container className="mt-100 mt-60">
                     <Row className="align-items-center">
                         <Col lg={6} md={6}>
-                            <img src={Feature1} className="img-fluid shadow-md rounded-md" alt="" />
+                            <img src={TeamImage} className="img-fluid shadow-md rounded-md" alt="" />
                         </Col>
 
                         <Col lg={6} md={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
@@ -84,7 +84,7 @@ export default function Feature() {
                         </Col>
 
                         <Col lg={6} md={6} className="order-1 order-md-2">
-                            <img src={Feature2} className="img-fluid shadow-md rounded-md" alt="" />
+                            <img src={ServerImage} className="img-fluid shadow-md rounded-md" alt="" />
                         </Col>
                     </Row>
                 </Container>
