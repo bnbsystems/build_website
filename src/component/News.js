@@ -16,8 +16,8 @@ export default function News() {
                     <Row className="justify-content-center">
                         <Col>
                             <div className="section-title text-center mb-4 pb-2">
-                                <h4 className="title mb-3">Latest News</h4>
-                                <p className="text-muted para-desc mb-0 mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
+                                <h4 className="title mb-3">Articles</h4>
+                                <p className="text-muted para-desc mb-0 mx-auto">Discover the power of our innovative solutions and elevate your developement experience.</p>
                             </div>
                         </Col>
                     </Row>
@@ -31,8 +31,8 @@ export default function News() {
 
                                 <CardBody className="content p-0">
                                     <div className="p-4">
-                                        <Link to="#" className="h5 title text-dark d-block mb-0">Building Your Corporate Identity from Motos</Link>
-                                        <p className="text-muted mt-2 mb-0">The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.</p>
+                                        <Link to="#" className="h5 title text-dark d-block mb-0">Benefits of build servers</Link>
+                                        <p className="text-muted mt-2 mb-0">Learn about the adventages of using build servers in development process.</p>
 
                                         <div className="mt-3">
                                             <Link to="#" className="link text-dark">Read More <i className="uil uil-arrow-right"></i></Link>
@@ -50,8 +50,8 @@ export default function News() {
 
                                 <CardBody className="content p-0">
                                     <div className="p-4">
-                                        <Link to="#" className="h5 title text-dark d-block mb-0">The Dark Side of Overnight Success</Link>
-                                        <p className="text-muted mt-2 mb-0">The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.</p>
+                                        <Link to="#" className="h5 title text-dark d-block mb-0">Automated deployments</Link>
+                                        <p className="text-muted mt-2 mb-0">Explore how automated deployments can elevate game quality.</p>
 
                                         <div className="mt-3">
                                             <Link to="#" className="link text-dark">Read More <i className="uil uil-arrow-right"></i></Link>
@@ -69,8 +69,8 @@ export default function News() {
 
                                 <CardBody className="content p-0">
                                     <div className="p-4">
-                                        <Link to="#" className="h5 title text-dark d-block mb-0">The Right Hand of Business IT World</Link>
-                                        <p className="text-muted mt-2 mb-0">The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.</p>
+                                        <Link to="#" className="h5 title text-dark d-block mb-0">Get feedback, improve communication</Link>
+                                        <p className="text-muted mt-2 mb-0">Improve teamwork and communication by getting build feedback and error alerts.</p>
 
                                         <div className="mt-3">
                                             <Link to="#" className="link text-dark">Read More <i className="uil uil-arrow-right"></i></Link>

@@ -11,12 +11,6 @@ import Footer from "../../component/Footer";
 
 import BackgroundImage from '../../assets/images/bg/marketing-shape.png';
 import CelebrationImage from '../../assets/images/svg/celebration.svg';
-import AmazonImage from '../../assets/images/client/amazon.svg';
-import GoogleImage from '../../assets/images/client/google.svg';
-import LenovoImage from '../../assets/images/client/lenovo.svg';
-import PaypalImage from '../../assets/images/client/paypal.svg';
-import ShopifyImage from '../../assets/images/client/shopify.svg';
-import SpotifyImage from '../../assets/images/client/spotify.svg';
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 /**
@@ -92,7 +86,7 @@ export default function Marketing() {
                 </section>
 
                 <Feature />
-                <Pricing />
+                {/* <Pricing /> */}
                 {/* <Review /> */}
                 <News />
                 <Contact />
