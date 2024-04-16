@@ -10,7 +10,8 @@ import Contact from "../../component/Contact";
 import Footer from "../../component/Footer";
 
 import BackgroundImage from '../../assets/images/bg/marketing-shape.png';
-import CelebrationImage from '../../assets/images/svg/celebration.svg';
+// import CelebrationImage from '../../assets/images/svg/celebration.svg';
+import ServerImage from '../../assets/images/main_page/server.jpg';
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 /**
@@ -42,7 +43,8 @@ export default function Marketing() {
                                 <Row className="justify-content-center">
                                     <Col lg={7} md={10}>
                                         <div className="home-dashboard">
-                                            <img src={CelebrationImage} alt="" className="img-fluid" />
+                                            {/* <img src={CelebrationImage} alt="" className="img-fluid" /> */}
+                                            <img src={ServerImage} alt="" className="img-fluid" />
                                         </div>
                                     </Col>
                                 </Row>

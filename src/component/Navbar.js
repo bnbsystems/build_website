@@ -11,8 +11,9 @@ import {
     Collapse
 } from "reactstrap";
 // Import Logo
-import logodark from "../assets/images/logo-dark.png";
-import logolight from "../assets/images/logo-light.png";
+// import logodark from "../assets/images/logo-dark.png";
+// import logolight from "../assets/images/logo-light.png";
+
 
 export default function NavbarPage() {
     const [isOpen, setMenu] = useState(true);
@@ -37,10 +38,9 @@ export default function NavbarPage() {
         <>
             <nav id="navbar" className="navbar navbar-expand-lg fixed-top sticky">
                 <div className="container">
-                    <NavbarBrand className="navbar-brand" to="/">
-                        <img src={logodark} className="logo-light-mode" alt="" />
-                        <img src={logolight} className="logo-dark-mode" alt="" />
-                    </NavbarBrand>
+                    <Link2 to="/">
+                        <div class="matrix-logo"  alt="" />
+                    </Link2>
                     <NavbarToggler className="navbar-toggler" onClick={toggleMenu}>
                         <Icon.Menu />
                     </NavbarToggler>
@@ -54,9 +54,9 @@ export default function NavbarPage() {
                             <NavItem>
                                 <Link activeClass="active" spy={true} smooth={true} duration={500} to="features" className="nav-link" href="#">Features</Link>
                             </NavItem>
-                            <NavItem>
+                            {/* <NavItem>
                                 <Link activeClass="active" spy={true} smooth={true} duration={500} to="pricing" className="nav-link" href="#">Pricing</Link>
-                            </NavItem>
+                            </NavItem> */}
                             {/* <NavItem>
                                 <Link activeClass="active" spy={true} smooth={true} duration={500} to="review" className="nav-link" href="#">Review</Link>
                             </NavItem> */}

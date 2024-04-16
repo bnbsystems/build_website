@@ -92,17 +92,17 @@ export default function Footer() {
                                 <Col lg={3} md={2} sm={3}>
                                     <div className="text-sm-start">
                                         <Link to="#" className="logo-footer">
-                                            <img src={Logo} alt="" />
+                                            <div class="matrix-logo-white"  alt="" />
                                         </Link>
                                     </div>
                                 </Col>
 
                                 <Col lg={6} md={6} sm={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
                                     <ul className="list-unstyled footer-list terms-service mb-0">
-                                        <li className="list-inline-item mb-0"><Link to="#" className="text-foot me-2">Privacy</Link></li>
-                                        <li className="list-inline-item mb-0"><Link to="#" className="text-foot me-2">Terms</Link></li>
-                                        <li className="list-inline-item mb-0"><Link to="#" className="text-foot me-2">FAQs</Link></li>
-                                        <li className="list-inline-item mb-0"><Link to="#" className="text-foot">Contact</Link></li>
+                                        <li className="list-inline-item mb-0"><Link to="/privacy-policy" className="text-foot me-2">Privacy</Link></li>
+                                        <li className="list-inline-item mb-0"><Link to="/terms" className="text-foot me-2">Terms</Link></li>
+                                        <li className="list-inline-item mb-0"><Link to="/faq" className="text-foot me-2">FAQs</Link></li>
+                                        {/* <li className="list-inline-item mb-0"><Link to="#" className="text-foot">Contact</Link></li> */}
                                     </ul>
                                 </Col>
 
