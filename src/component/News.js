@@ -26,7 +26,7 @@ export default function News() {
                         <Col lg={4} md={6} className="mt-4 pt-2">
                             <Card className="blog blog-primary shadow rounded overflow-hidden border-0">
                                 <div className="blog-image position-relative overflow-hidden">
-                                    <img src={Blo1Image} className="img-fluid" alt="" />
+                                    <img src={Blo1Image} className="img-fluid rounded-md" alt="" />
                                 </div>
 
                                 <CardBody className="content p-0">

@@ -5,6 +5,38 @@
 /*********************************/
 /*         Menu                  */
 /*===============================*/
+.matrix-logo {
+    width: 50px;
+    height: 50px;
+    margin: 22px;
+    padding-right: 128px;
+    background: url(../../logo.svg) no-repeat top left;
+    background-image: url(../../logo.svg);
+    background-position-x: left;
+    background-position-y: top;
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+.matrix-logo-white {
+    width: 50px;
+    height: 50px;
+    margin: 22px;
+    padding-right: 128px;
+    background: url(../../logo-white.svg) no-repeat top left;
+    background-image: url(../../logo-white.svg);
+    background-position-x: left;
+    background-position-y: top;
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
 .navbar {
     transition: all 0.5s ease;
     padding: 0;
