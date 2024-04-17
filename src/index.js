@@ -5,6 +5,7 @@ import "./assets/css/materialdesignicons.min.css";
 import "./assets/scss/themes.scss";
 
 import reportWebVitals from './reportWebVitals';
+import './i18n';
 
 import {
   BrowserRouter,
@@ -12,7 +13,7 @@ import {
   Route,
 } from "react-router-dom";
 
-import Marketing from './pages/marketing';
+import LandingPage from './pages/landing';
 import Agency from './pages/agency';
 import Portfolio from './pages/portfolio';
 import Maintenance from './pages/maintenance';
@@ -35,21 +36,19 @@ root.render(
     <BrowserRouter basename='/'>
       {/* <App /> */}
       <Routes>
-        <Route path="/" element={<Marketing />} />
-        <Route path="/marketing" element={<Marketing />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/marketing" element={<LandingPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/faq" element={<Faq />} />
+
         <Route path="/agency" element={<Agency />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/personal" element={<Personal />} />
         <Route path="/startup" element={<Startup />} />
-  
         <Route path="/saas" element={<Saas />} />
-  
         <Route path="/maintenance" element={<Maintenance />} />
         <Route path="/error" element={<Error />} />
-
         <Route path="/comingsoon" element={<Comingsoon />} />
         {/* <Route path="/auth-login" element={<Login />} />
         <Route path="/auth-signup" element={<Signup />} /> */}

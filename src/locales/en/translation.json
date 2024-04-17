@@ -1,0 +1,87 @@
+{
+    "common": {
+        "learn_more": "Learn more",
+        "read_more": "Read more",
+        "phone": "Phone",
+        "email": "Email",
+        "location": "Location"
+    },
+    "navbar": {
+        "home": "HOME",
+        "features": "FEATURES",
+        "articles": "ARTICLES",
+        "contact": "CONTACT US"
+    },
+    "footer": {
+        "privacy": "Privacy policy",
+        "terms": "Terms and conditions",
+        "faq": "FAQ"
+    },
+    "landing_page": {
+        "subtitle": "Explore build automation solutions for your Godot projects.",
+        "feature_promotion_1": {
+            "title": "Automate CI/CD process",
+            "subtitle": "Unlock the power of continuous integration and continuous delivery without the hassle of complex setup processes. Our CI/CD pipeline is designed with simplicity and ease of integration in mind, enabling you to streamline your development workflow effortlessly."
+        },
+        "feature_promotion_2": {
+            "title": "Scale build infrastructure to your need",
+            "subtitle": "Empower your development team to innovate and scale without limitations. With our platform, you can effortlessly scale your build infrastructure to match your evolving needs, ensuring optimal performance and efficiency at every stage of your development lifecycle."
+        },
+        "key_features": {
+            "title": "Key features",
+            "subtitle": "Develop games faster by optimizing CI/CD pipeline and developement process.",
+            "feature_1": {
+                "title": "Productivity",
+                "description": "Automate boring, repetitive tasks by integrating CI/CD piepline into your projects."
+            },
+            "feature_2": {
+                "title": "Reduced downtime",
+                "description": "Allow developers to build projects in consistent and reproducible build environment outside of their personal workspace."
+            },
+            "feature_3": {
+                "title": "Scalability",
+                "description": "Scale build infrastructure according to your needs. Build your Godot projects in parallel for different platforms."
+            },
+            "feature_4": {
+                "title": "Enhanced game quality",
+                "description": "Increase quality of your games by frequent builds and automated tests, allowing for faster bug fixes."
+            },
+            "feature_5": {
+                "title": "Collaboration",
+                "description": "Get notification on build status and new releases. Promote communication and code reviews in centrilized platform which provides detailed logs and audit trails of deployments."
+            },
+            "feature_6": {
+                "title": "Cost efficiency",
+                "description": "Reduce infrastructure costs. Pay only for what you need."
+            }
+        },
+        "articles": {
+            "title": "Articles",
+            "subtitle": "Discover the power of our innovative solutions and elevate your developement experience.",
+            "article_1":{
+                "title": "Benefits of build servers",
+                "description":"Learn about the adventages of using build servers in development process."
+            },
+            "article_2":{
+                "title": "Automated deployments",
+                "description":"Explore how automated deployments can elevate game quality."
+            },
+            "article_3":{
+                "title": "Get feedback, improve communication",
+                "description":"Improve teamwork and communication by getting build feedback and error alerts."
+            }
+        },
+        "contact_form": {
+            "title": "Contact us",
+            "description": "Get in touch with us to find soultion that will meet your needs.",
+            "form_fields": {
+                "name": "Your name / Company name",
+                "email": "Email",
+                "subject": "Subject",
+                "message": "Message",
+                "consent_to_contact": "I consent to the transmission of commercial information by ..., at the email address I have provided.",
+                "send": "Send message"
+            }
+        }
+    }
+}

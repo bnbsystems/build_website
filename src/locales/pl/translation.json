@@ -1,0 +1,87 @@
+{
+    "common": {
+        "learn_more": "Dowiedz się więcej",
+        "read_more": "Czytaj dalej",
+        "phone": "Nr telefonu",
+        "email": "Adres email",
+        "location": "Lokalizacja"
+    },
+    "navbar": {
+        "home": "STRONA GŁÓWNA",
+        "features": "OFERTA",
+        "articles": "ARTYKUŁY",
+        "contact": "KONTAKT"
+    },
+    "footer": {
+        "privacy": "Polityka prywatności",
+        "terms": "Regulamin",
+        "faq": "FAQ"
+    },
+    "landing_page": {
+        "subtitle": "Poznaj nasze rozwiązania do automatyzacji budowania projektów w Godot.",
+        "feature_promotion_1": {
+            "title": "Prosta konfiguracja procesu CI/CD",
+            "subtitle": "Poznaj potęgę Continous Integration i Continous Delivery, bez uciążliwego procesu konfiguracji. Nasza linia produkcyjna CI/CD została zaprojektowana z myślą o prostocie, łatwości integracji i przyspieszeniu procesu tworzenia gry."
+        },
+        "feature_promotion_2": {
+            "title": "Skaluj infrastrukturę według potrzeb",
+            "subtitle": "Odblokuj możliwości twojego zespołu, skaluj infrastrukturę budowania gry do twoich potrzeb. Dzięki naszej platformie bez wysiłku dostosujesz infrastrukturę budowania do zmieniających się potrzeb, zapewniając optymalną wydajność i efektywność na każdym etapie procesu tworzenia."
+        },
+        "key_features": {
+            "title": "Zalety naszego produktu",
+            "subtitle": "Przyspiesz proces tworzenia gry poprzez wdrożenie infrastruktury CI/CD.",
+            "feature_1": {
+                "title": "Produktywność",
+                "description": "Zautomatyzuj nudne, powtarzalne zadania, integrując potok CI/CD w swoich projektach."
+            },
+            "feature_2": {
+                "title": "Zredukowany czas przestoju",
+                "description": "Pozwól programistom budować projekty w spójnym i możliwym do odtworzenia środowisku budowania poza ich osobistą przestrzenią roboczą."
+            },
+            "feature_3": {
+                "title": "Skalowalność",
+                "description": "Dopasuj infrastrukturę budowy do swoich potrzeb. Buduj swoje projekty w Godocie równolegle dla różnych platform."
+            },
+            "feature_4": {
+                "title": "Wyższa jakość gier",
+                "description": "Zwiększ jakość swoich gier dzięki częstym kompilacjom i automatycznym testom, umożliwiając szybsze naprawy błędów."
+            },
+            "feature_5": {
+                "title": "Współpraca",
+                "description": "Otrzymuj powiadomienia o statusie budowy i nowych wersjach gry. Promuj komunikację i przegląd wprowadzanych zmiany w scentralizowanej platformie, która zapewnia szczegółowe raporty budowania i wdrażania gry."
+            },
+            "feature_6": {
+                "title": "Efektywność kosztów",
+                "description": "Zredukuj koszty infrastruktury. Płać tylko za to, czego potrzebujesz."
+            }
+        },
+        "articles": {
+            "title": "Artykuły",
+            "subtitle": "Odkryj moc naszych innowacyjnych rozwiązań i podnieś jakość procesu tworzenia gry.",
+            "article_1":{
+                "title": "Korzyści z serwerów budowania",
+                "description":"Dowiedz się o korzyściach wynikających z wykorzystania serwerów budowania w procesie tworzenia gry."
+            },
+            "article_2":{
+                "title": "Zautomatyzowane wdrożenia",
+                "description":"Odkryj, w jaki sposób zautomatyzowane wdrożenia mogą podnieść jakość gier."
+            },
+            "article_3":{
+                "title": "Otrzymuj raporty z procesu budowania, popraw komunikację",
+                "description":"Popraw współpracę zespołu oraz komunikację poprzez otrzymywanie informacji zwrotnych na temat budowy i alertów o błędach."
+            }
+        },
+        "contact_form": {
+            "title": "Skontaktuj się z nami",
+            "description": "Skontaktuj się z nami, aby znaleźć rozwiązanie, które spełni Twoje potrzeby.",
+            "form_fields": {
+                "name": "Imię i nazwisko / Nazwa firmy",
+                "email": "Email",
+                "subject": "Temat",
+                "message": "Treść wiadomości",
+                "consent_to_contact": "Wyrażam zgodę na przesyłanie informacji handlowych przez ..., na podany przeze mnie adres e-mail.",
+                "send": "Wyślij wiadomość"
+            }
+        }
+    }
+}

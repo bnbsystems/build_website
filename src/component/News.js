@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 import Blo1Image from "../assets/images/blog/1.jpg";
 import Blo2Image from "../assets/images/blog/2.jpg";
 import Blo3Image from "../assets/images/blog/3.jpg";
+import { useTranslation } from "react-i18next";
 
 
 export default function News() {
+    const { t } = useTranslation()
     return (
         <>
             {/* Start Blog  */}
@@ -16,8 +18,8 @@ export default function News() {
                     <Row className="justify-content-center">
                         <Col>
                             <div className="section-title text-center mb-4 pb-2">
-                                <h4 className="title mb-3">Articles</h4>
-                                <p className="text-muted para-desc mb-0 mx-auto">Discover the power of our innovative solutions and elevate your developement experience.</p>
+                                <h4 className="title mb-3">{t('landing_page.articles.title')}</h4>
+                                <p className="text-muted para-desc mb-0 mx-auto">{t('landing_page.articles.subtitle')}</p>
                             </div>
                         </Col>
                     </Row>
@@ -31,11 +33,11 @@ export default function News() {
 
                                 <CardBody className="content p-0">
                                     <div className="p-4">
-                                        <Link to="#" className="h5 title text-dark d-block mb-0">Benefits of build servers</Link>
-                                        <p className="text-muted mt-2 mb-0">Learn about the adventages of using build servers in development process.</p>
+                                        <Link to="#" className="h5 title text-dark d-block mb-0">{t('landing_page.articles.article_1.title')}</Link>
+                                        <p className="text-muted mt-2 mb-0">{t('landing_page.articles.article_1.description')}</p>
 
                                         <div className="mt-3">
-                                            <Link to="#" className="link text-dark">Read More <i className="uil uil-arrow-right"></i></Link>
+                                            <Link to="#" className="link text-dark">{t('common.read_more')}<i className="uil uil-arrow-right"></i></Link>
                                         </div>
                                     </div>
                                 </CardBody>
@@ -50,11 +52,11 @@ export default function News() {
 
                                 <CardBody className="content p-0">
                                     <div className="p-4">
-                                        <Link to="#" className="h5 title text-dark d-block mb-0">Automated deployments</Link>
-                                        <p className="text-muted mt-2 mb-0">Explore how automated deployments can elevate game quality.</p>
+                                        <Link to="#" className="h5 title text-dark d-block mb-0">{t('landing_page.articles.article_2.title')}</Link>
+                                        <p className="text-muted mt-2 mb-0">{t('landing_page.articles.article_2.description')}</p>
 
                                         <div className="mt-3">
-                                            <Link to="#" className="link text-dark">Read More <i className="uil uil-arrow-right"></i></Link>
+                                            <Link to="#" className="link text-dark">{t('common.read_more')} <i className="uil uil-arrow-right"></i></Link>
                                         </div>
                                     </div>
                                 </CardBody>
@@ -69,11 +71,11 @@ export default function News() {
 
                                 <CardBody className="content p-0">
                                     <div className="p-4">
-                                        <Link to="#" className="h5 title text-dark d-block mb-0">Get feedback, improve communication</Link>
-                                        <p className="text-muted mt-2 mb-0">Improve teamwork and communication by getting build feedback and error alerts.</p>
+                                        <Link to="#" className="h5 title text-dark d-block mb-0">{t('landing_page.articles.article_3.title')}</Link>
+                                        <p className="text-muted mt-2 mb-0">{t('landing_page.articles.article_3.description')}</p>
 
                                         <div className="mt-3">
-                                            <Link to="#" className="link text-dark">Read More <i className="uil uil-arrow-right"></i></Link>
+                                            <Link to="#" className="link text-dark">{t('common.read_more')} <i className="uil uil-arrow-right"></i></Link>
                                         </div>
                                     </div>
                                 </CardBody>
