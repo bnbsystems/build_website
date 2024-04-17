@@ -108,7 +108,8 @@ export default function Footer() {
 
                                 <Col lg={3} md={4} sm={3} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
                                     <div className="text-sm-end">
-                                        <p className="mb-0 text-foot">© {(new Date().getFullYear())}{" "} <Link to="#" className="text-reset">Shreethemes</Link>.</p>
+                                        {/* insert copyright */}
+                                        {/* <p className="mb-0 text-foot">© {(new Date().getFullYear())}{" "} <Link to="#" className="text-reset"></Link>.</p> */}
                                     </div>
                                 </Col>
                             </Row>

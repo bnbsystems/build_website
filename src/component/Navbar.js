@@ -10,6 +10,8 @@ import {
     Nav,
     Collapse
 } from "reactstrap";
+import LanguagePicker from './LanguagePicker';
+import { useTranslation } from 'react-i18next';
 // Import Logo
 // import logodark from "../assets/images/logo-dark.png";
 // import logolight from "../assets/images/logo-light.png";
@@ -18,6 +20,7 @@ import {
 export default function NavbarPage() {
     const [isOpen, setMenu] = useState(true);
 
+    const { t } = useTranslation()
     window.addEventListener("scroll", windowScroll);
 
     function windowScroll() {
@@ -48,11 +51,12 @@ export default function NavbarPage() {
                     <Collapse className={`navbar-collapse ${isOpen === true ? 'hidden' : 'show'}`} id="navbarSupportedContent">
 
                         <Nav className="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navlist">
+                            <LanguagePicker />
                             <NavItem>
-                                <Link activeClass="active" spy={true} smooth={true} duration={500} to="home" className="nav-link" href="#">Home</Link>
+                                <Link activeClass="active" spy={true} smooth={true} duration={500} to="home" className="nav-link" href="#">{t('navbar.home')}</Link>
                             </NavItem>
                             <NavItem>
-                                <Link activeClass="active" spy={true} smooth={true} duration={500} to="features" className="nav-link" href="#">Features</Link>
+                                <Link activeClass="active" spy={true} smooth={true} duration={500} to="features" className="nav-link" href="#">{t('navbar.features')}</Link>
                             </NavItem>
                             {/* <NavItem>
                                 <Link activeClass="active" spy={true} smooth={true} duration={500} to="pricing" className="nav-link" href="#">Pricing</Link>
@@ -61,10 +65,10 @@ export default function NavbarPage() {
                                 <Link activeClass="active" spy={true} smooth={true} duration={500} to="review" className="nav-link" href="#">Review</Link>
                             </NavItem> */}
                             <NavItem>
-                                <Link activeClass="active" spy={true} smooth={true} duration={500} to="blog" className="nav-link" href="#">Articles</Link>
+                                <Link activeClass="active" spy={true} smooth={true} duration={500} to="blog" className="nav-link" href="#">{t('navbar.articles')}</Link>
                             </NavItem>
                             <NavItem>
-                                <Link activeClass="active" spy={true} smooth={true} duration={500} to="contact" className="nav-link" href="#">Contact Us</Link>
+                                <Link activeClass="active" spy={true} smooth={true} duration={500} to="contact" className="nav-link" href="#">{t('navbar.contact')}</Link>
                             </NavItem>
                         </Nav>
 

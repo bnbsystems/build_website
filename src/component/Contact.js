@@ -2,6 +2,7 @@ import React, { Component, useCallback, useEffect, useRef, useState } from "reac
 import { Col, Container, Row } from "reactstrap";
 import { Link } from "react-router-dom";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import { useTranslation } from "react-i18next";
 
 const submitUrl = `${process.env.REACT_APP_API_URL}/contact`;
 export default function Contact() {
@@ -9,7 +10,7 @@ export default function Contact() {
     const [formState, setFormState] = useState({})
     const [submitError, setSubmitError] = useState(false)
     const [wasSubmited, setWasSubmited] = useState(false)
-
+    const { t } = useTranslation();
     const { executeRecaptcha } = useGoogleReCaptcha();
 
     const handleReCaptchaVerify = useCallback(async () => {
@@ -69,8 +70,8 @@ export default function Contact() {
                     <Row className="justify-content-center">
                         <Col>
                             <div className="section-title text-center mb-4 pb-2">
-                                <h4 className="title mb-3">Contact us</h4>
-                                <p className="text-muted para-desc mb-0 mx-auto">Get in touch with us to consult soultion that will meet your needs.</p>
+                                <h4 className="title mb-3">{t('landing_page.contact_form.title')}</h4>
+                                <p className="text-muted para-desc mb-0 mx-auto">{t('landing_page.contact_form.description')}</p>
                             </div>
                         </Col>
                     </Row>

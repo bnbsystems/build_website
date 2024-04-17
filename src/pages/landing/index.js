@@ -13,11 +13,11 @@ import BackgroundImage from '../../assets/images/bg/marketing-shape.png';
 // import CelebrationImage from '../../assets/images/svg/celebration.svg';
 import ServerImage from '../../assets/images/main_page/server.jpg';
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import { useTranslation } from 'react-i18next';
 
-/**
- * Marketing component
- */
-export default function Marketing() {
+export default function LandingPage() {
+    const { t } = useTranslation()
+
     return (
         <>
         <GoogleReCaptchaProvider reCaptchaKey={process.env.REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY}>
@@ -30,7 +30,7 @@ export default function Marketing() {
                             <div className="col-lg-12 text-center mt-0 mt-md-5 pt-0 pt-md-5">
                                 <div className="title-heading">
                                     <h4 className="heading my-3">Godot Build Server</h4>
-                                    <p className="para-desc mx-auto text-muted">Explore build automation solutions for your Godot projects.</p>
+                                    <p className="para-desc mx-auto text-muted">{t('landing_page.subtitle')}</p>
                                 </div>
 
                                 {/* <div className="text-center subcribe-form mt-4 pt-2">
