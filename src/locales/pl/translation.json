@@ -8,9 +8,14 @@
     },
     "navbar": {
         "home": "STRONA GŁÓWNA",
-        "features": "OPIS PRODUKTU",
+        "features": "OFERTA",
         "articles": "ARTYKUŁY",
-        "contact": "FORMULARZ KONTAKTOWY"
+        "contact": "KONTAKT"
+    },
+    "footer": {
+        "privacy": "Polityka prywatności",
+        "terms": "Regulamin",
+        "faq": "FAQ"
     },
     "landing_page": {
         "subtitle": "Poznaj nasze rozwiązania do automatyzacji budowania projektów w Godot.",
@@ -23,7 +28,7 @@
             "subtitle": "Odblokuj możliwości twojego zespołu, skaluj infrastrukturę budowania gry do twoich potrzeb. Dzięki naszej platformie bez wysiłku dostosujesz infrastrukturę budowania do zmieniających się potrzeb, zapewniając optymalną wydajność i efektywność na każdym etapie procesu tworzenia."
         },
         "key_features": {
-            "title": "Kluczowe cechy",
+            "title": "Zalety naszego produktu",
             "subtitle": "Przyspiesz proces tworzenia gry poprzez wdrożenie infrastruktury CI/CD.",
             "feature_1": {
                 "title": "Produktywność",
@@ -68,7 +73,15 @@
         },
         "contact_form": {
             "title": "Skontaktuj się z nami",
-            "description": "Skontaktuj się z nami, aby znaleźć rozwiązanie, które spełni Twoje potrzeby."
+            "description": "Skontaktuj się z nami, aby znaleźć rozwiązanie, które spełni Twoje potrzeby.",
+            "form_fields": {
+                "name": "Imię i nazwisko / Nazwa firmy",
+                "email": "Email",
+                "subject": "Temat",
+                "message": "Treść wiadomości",
+                "consent_to_contact": "Wyrażam zgodę na przesyłanie informacji handlowych przez ..., na podany przeze mnie adres e-mail.",
+                "send": "Wyślij wiadomość"
+            }
         }
     }
 }

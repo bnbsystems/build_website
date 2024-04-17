@@ -85,25 +85,25 @@ export default function Contact() {
                                     <Row>
                                         <Col md={6}>
                                             <div className="mb-4">
-                                                <input onChange={updateFormField} maxLength={60} name="name" id="name" type="text" className="form-control" placeholder="Name :" required />
+                                                <input onChange={updateFormField} maxLength={60} name="name" id="name" type="text" className="form-control" placeholder={t('landing_page.contact_form.form_fields.name')} required />
                                             </div>
                                         </Col>
 
                                         <Col md={6} >
                                             <div className="mb-4">
-                                                <input onChange={updateFormField} maxLength={60} name="email" id="email" type="email" className="form-control" placeholder="Email :" required />
+                                                <input onChange={updateFormField} maxLength={60} name="email" id="email" type="email" className="form-control" placeholder={t('landing_page.contact_form.form_fields.email')} required />
                                             </div>
                                         </Col>
 
                                         <div className="col-12">
                                             <div className="mb-4">
-                                                <input onChange={updateFormField} maxLength={60} name="subject" id="subject" className="form-control" placeholder="Subject :" required />
+                                                <input onChange={updateFormField} maxLength={60} name="subject" id="subject" className="form-control" placeholder={t('landing_page.contact_form.form_fields.subject')} required />
                                             </div>
                                         </div>
 
                                         <div className="col-12">
                                             <div className="mb-4">
-                                                <textarea onChange={updateFormField} maxLength={600} name="message" id="message" rows={4} className="form-control" placeholder="Message :" required />
+                                                <textarea onChange={updateFormField} maxLength={600} name="message" id="message" rows={4} className="form-control" placeholder={t('landing_page.contact_form.form_fields.message')} required />
                                             </div>
                                         </div>
                                         <div className="mt-3 col-12 checkbox-field">
@@ -116,7 +116,7 @@ export default function Contact() {
                                                 
                                             />
                                             <div className="divider" />
-                                            <label style={{display: "inline-block"}} htmlFor="consent-to-contact">I consent to the transmission of commercial information by ..., at the email address I have provided.</label>
+                                            <label style={{display: "inline-block"}} htmlFor="consent-to-contact">{t('landing_page.contact_form.form_fields.consent_to_contact')}</label>
                                         </div>
                                     </Row>
                                     <Row>
@@ -129,7 +129,7 @@ export default function Contact() {
                                     </Row>
                                     <Row>
                                         <div className="col-12 mt-3 text-end">
-                                            <button type="submit" id="submit" name="send" className="btn btn-primary">Send Message</button>
+                                            <button type="submit" id="submit" name="send" className="btn btn-primary">{t('landing_page.contact_form.form_fields.send')}</button>
                                         </div>
                                     </Row>
                                 </form>
@@ -144,7 +144,7 @@ export default function Contact() {
                                     </div>
 
                                     <div className="flex-1 ms-3">
-                                        <h5 className="mb-2">Phone</h5>
+                                        <h5 className="mb-2">{t('common.phone')}</h5>
                                         {/* <Link to="tel:+152534-468-854" className="text-muted">+152 534-468-854</Link> */}
                                     </div>
                                 </div>
@@ -155,7 +155,7 @@ export default function Contact() {
                                     </div>
 
                                     <div className="flex-1 ms-3">
-                                        <h5 className="mb-2">Email</h5>
+                                        <h5 className="mb-2">{t('common.email')}</h5>
                                         {/* <Link to="mailto:contact@example.com" className="text-muted">contact@example.com</Link> */}
                                     </div>
                                 </div>
@@ -166,7 +166,7 @@ export default function Contact() {
                                     </div>
 
                                     <div className="flex-1 ms-3">
-                                        <h5 className="mb-2">Location</h5>
+                                        <h5 className="mb-2">{t('common.location')}</h5>
                                         {/* <p className="text-muted mb-2">C/54 Northwest Freeway, Suite 558, Houston, USA 485</p> */}
                                     </div>
                                 </div>

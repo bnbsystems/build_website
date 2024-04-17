@@ -12,6 +12,11 @@
         "articles": "ARTICLES",
         "contact": "CONTACT US"
     },
+    "footer": {
+        "privacy": "Privacy policy",
+        "terms": "Terms and conditions",
+        "faq": "FAQ"
+    },
     "landing_page": {
         "subtitle": "Explore build automation solutions for your Godot projects.",
         "feature_promotion_1": {
@@ -68,7 +73,15 @@
         },
         "contact_form": {
             "title": "Contact us",
-            "description": "Get in touch with us to find soultion that will meet your needs."
+            "description": "Get in touch with us to find soultion that will meet your needs.",
+            "form_fields": {
+                "name": "Your name / Company name",
+                "email": "Email",
+                "subject": "Subject",
+                "message": "Message",
+                "consent_to_contact": "I consent to the transmission of commercial information by ..., at the email address I have provided.",
+                "send": "Send message"
+            }
         }
     }
 }
