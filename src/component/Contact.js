@@ -41,7 +41,7 @@ export default function Contact() {
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({
                 ...formState, 
-                recaptchaToken: token ?? ''
+                captchaToken: token ?? ''
             }),
         }
         if(typeof submitUrl !== 'string' || submitUrl.trim().length === 0){
