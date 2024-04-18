@@ -50,6 +50,7 @@ export default function NavbarPage() {
                     <Collapse className={`navbar-collapse ${isOpen === true ? 'hidden' : 'show'}`} id="navbarSupportedContent">
 
                         <Nav className="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navlist">
+                            <LanguagePicker />
                             <NavItem>
                                 <Link activeClass="active" spy={true} smooth={true} duration={500} to="home" className="nav-link" href="#">{t('navbar.home')}</Link>
                             </NavItem>
