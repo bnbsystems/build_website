@@ -18,8 +18,7 @@ import { useTranslation } from 'react-i18next';
 
 
 export default function NavbarPage() {
-    const [isOpen, setMenu] = useState(true);
-
+    const [isOpen, setMenu] = useState(true)
     const { t } = useTranslation()
     window.addEventListener("scroll", windowScroll);
 
@@ -70,6 +69,7 @@ export default function NavbarPage() {
                             <NavItem>
                                 <Link activeClass="active" spy={true} smooth={true} duration={500} to="contact" className="nav-link" href="#">{t('navbar.contact')}</Link>
                             </NavItem>
+                            <LanguagePicker />
                         </Nav>
 
                         {/* <ul className="list-inline menu-social mb-0 ps-lg-4 ms-2">
