@@ -2,8 +2,11 @@ import React from "react";
 import { Container, Row } from "reactstrap";
 import Navbar from "../../component/Navbar";
 import Footer from "../../component/Footer";
+import { useTranslation } from "react-i18next";
 
 export default function PrivacyPolicy() {
+    const { t } = useTranslation()
+
     return (
         <>
             <div>
@@ -16,7 +19,7 @@ export default function PrivacyPolicy() {
                     <Container>
                         <Row className="row justify-content-center">
                             <div className="title-heading mt-5 mb-5">
-                                    <h4 className="heading my-3">Privacy Policy</h4>
+                                    <h4 className="heading my-3">{t('privacy_policy_page.title')}</h4>
                                     <p className="para-desc mx-auto text-muted"></p>
                             </div>
                         </Row>

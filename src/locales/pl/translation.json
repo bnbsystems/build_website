@@ -83,5 +83,14 @@
                 "send": "Wyślij wiadomość"
             }
         }
+    },
+    "privacy_policy_page": {
+        "title": "Polityka prywatności"
+    },
+    "terms_and_conditions_page": {
+        "title": "Regulamin"
+    },
+    "faq_page": {
+        "title": "FAQ - Często zadawane pytania"
     }
 }
