@@ -33,11 +33,11 @@ export default function News() {
 
                                 <CardBody className="content p-0">
                                     <div className="p-4">
-                                        <Link to="#" className="h5 title text-dark d-block mb-0">{t('landing_page.articles.article_1.title')}</Link>
-                                        <p className="text-muted mt-2 mb-0">{t('landing_page.articles.article_1.description')}</p>
+                                        <Link to="/blog/advantages" className="h5 title text-dark d-block mb-0">{t('landing_page.articles.advantages.title')}</Link>
+                                        <p className="text-muted mt-2 mb-0">{t('landing_page.articles.advantages.description')}</p>
 
                                         <div className="mt-3">
-                                            <Link to="#" className="link text-dark">{t('common.read_more')}<i className="uil uil-arrow-right"></i></Link>
+                                            <Link to="/blog/advantages" className="link text-dark">{t('common.read_more')}<i className="uil uil-arrow-right"></i></Link>
                                         </div>
                                     </div>
                                 </CardBody>
@@ -52,11 +52,11 @@ export default function News() {
 
                                 <CardBody className="content p-0">
                                     <div className="p-4">
-                                        <Link to="#" className="h5 title text-dark d-block mb-0">{t('landing_page.articles.article_2.title')}</Link>
-                                        <p className="text-muted mt-2 mb-0">{t('landing_page.articles.article_2.description')}</p>
+                                        <Link to="/blog/automation" className="h5 title text-dark d-block mb-0">{t('landing_page.articles.automation.title')}</Link>
+                                        <p className="text-muted mt-2 mb-0">{t('landing_page.articles.automation.description')}</p>
 
                                         <div className="mt-3">
-                                            <Link to="#" className="link text-dark">{t('common.read_more')} <i className="uil uil-arrow-right"></i></Link>
+                                            <Link to="/blog/automation" className="link text-dark">{t('common.read_more')} <i className="uil uil-arrow-right"></i></Link>
                                         </div>
                                     </div>
                                 </CardBody>
@@ -71,11 +71,11 @@ export default function News() {
 
                                 <CardBody className="content p-0">
                                     <div className="p-4">
-                                        <Link to="#" className="h5 title text-dark d-block mb-0">{t('landing_page.articles.article_3.title')}</Link>
-                                        <p className="text-muted mt-2 mb-0">{t('landing_page.articles.article_3.description')}</p>
+                                        <Link to="/blog/build_raport" className="h5 title text-dark d-block mb-0">{t('landing_page.articles.build_raport.title')}</Link>
+                                        <p className="text-muted mt-2 mb-0">{t('landing_page.articles.build_raport.description')}</p>
 
                                         <div className="mt-3">
-                                            <Link to="#" className="link text-dark">{t('common.read_more')} <i className="uil uil-arrow-right"></i></Link>
+                                            <Link to="/blog/build_raport" className="link text-dark">{t('common.read_more')} <i className="uil uil-arrow-right"></i></Link>
                                         </div>
                                     </div>
                                 </CardBody>

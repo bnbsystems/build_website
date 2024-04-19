@@ -52,7 +52,7 @@ export default function LandingPage() {
                         </Row>
                     </Container>
                 </section>
-                <div className="position-relative">
+                <div className="mt-3 position-relative">
                     <div className="shape marketing-hero overflow-hidden text-light"></div>
                 </div>
 
