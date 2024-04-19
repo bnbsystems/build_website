@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll';
-import { Link as Link2 } from 'react-router-dom';
+import { Link as Link2, useLocation } from 'react-router-dom';
 
 import * as Icon from 'react-feather';
 import {
@@ -12,6 +12,7 @@ import {
 } from "reactstrap";
 import LanguagePicker from './LanguagePicker';
 import { useTranslation } from 'react-i18next';
+import { HashLink } from 'react-router-hash-link';
 // Import Logo
 // import logodark from "../assets/images/logo-dark.png";
 // import logolight from "../assets/images/logo-light.png";
@@ -20,6 +21,7 @@ import { useTranslation } from 'react-i18next';
 export default function NavbarPage() {
     const [isOpen, setMenu] = useState(true)
     const { t } = useTranslation()
+    const location = useLocation()
     window.addEventListener("scroll", windowScroll);
 
     function windowScroll() {
@@ -36,6 +38,38 @@ export default function NavbarPage() {
     const toggleMenu = () => {
         setMenu(!isOpen)
     }
+
+    const routes = [
+        {
+            to: "home",
+            name: t('navbar.home')
+        },
+        {
+            to: "features",
+            name: t('navbar.features')
+        },
+        {
+            to: "blog",
+            name: t('navbar.articles')
+        },
+        {
+            to: "contact",
+            name: t('navbar.contact')
+        },
+    ]
+
+    const mapRouteToScrollLink = (route) => {
+        return (<NavItem>
+        <Link activeClass="active" spy={true} smooth={true} duration={500} to={route.to} className="nav-link" href="#">{route.name}</Link>
+    </NavItem>)
+    }
+
+    const mapRouteToRouterLink = (route) => {
+        return (<NavItem>
+        <HashLink activeClass="active" spy={true} to={`/#${route.to}`} className="nav-link">{route.name}</HashLink>
+    </NavItem>)
+    }
+
     return (
         <>
             <nav id="navbar" className="navbar navbar-expand-lg fixed-top sticky">
@@ -50,24 +84,13 @@ export default function NavbarPage() {
                     <Collapse className={`navbar-collapse ${isOpen === true ? 'hidden' : 'show'}`} id="navbarSupportedContent">
 
                         <Nav className="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navlist">
-                            <NavItem>
-                                <Link activeClass="active" spy={true} smooth={true} duration={500} to="home" className="nav-link" href="#">{t('navbar.home')}</Link>
-                            </NavItem>
-                            <NavItem>
-                                <Link activeClass="active" spy={true} smooth={true} duration={500} to="features" className="nav-link" href="#">{t('navbar.features')}</Link>
-                            </NavItem>
                             {/* <NavItem>
                                 <Link activeClass="active" spy={true} smooth={true} duration={500} to="pricing" className="nav-link" href="#">Pricing</Link>
                             </NavItem> */}
                             {/* <NavItem>
                                 <Link activeClass="active" spy={true} smooth={true} duration={500} to="review" className="nav-link" href="#">Review</Link>
                             </NavItem> */}
-                            <NavItem>
-                                <Link activeClass="active" spy={true} smooth={true} duration={500} to="blog" className="nav-link" href="#">{t('navbar.articles')}</Link>
-                            </NavItem>
-                            <NavItem>
-                                <Link activeClass="active" spy={true} smooth={true} duration={500} to="contact" className="nav-link" href="#">{t('navbar.contact')}</Link>
-                            </NavItem>
+                            {location.pathname === '/' ? routes?.map(mapRouteToScrollLink) : routes?.map(mapRouteToRouterLink)}
                             <LanguagePicker />
                         </Nav>
 

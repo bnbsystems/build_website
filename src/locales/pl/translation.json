@@ -81,7 +81,9 @@
                 "message": "Treść wiadomości",
                 "consent_to_contact": "Wyrażam zgodę na przesyłanie informacji handlowych przez ..., na podany przeze mnie adres e-mail.",
                 "send": "Wyślij wiadomość"
-            }
+            },
+            "success_message": "Wiadomość została wysłana.",
+            "error_message": "Błąd! Spróbuj ponownie później."
         }
     },
     "privacy_policy_page": {

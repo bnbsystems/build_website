@@ -81,7 +81,9 @@
                 "message": "Message",
                 "consent_to_contact": "I consent to the transmission of commercial information by ..., at the email address I have provided.",
                 "send": "Send message"
-            }
+            },
+            "success_message": "Contact form was sent successfuly.",
+            "error_message": "Error! Try again later."
         }
     },
     "privacy_policy_page": {
