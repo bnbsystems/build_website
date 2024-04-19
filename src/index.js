@@ -28,6 +28,15 @@ import Startup from './pages/startup';
 import PrivacyPolicy from './pages/privacy-policy';
 import Terms from './pages/terms';
 import Faq from './pages/faq';
+import ProductivityPage from './pages/feature/productivity';
+import DowntimePage from './pages/feature/downtime';
+import ScalabilityPage from './pages/feature/scalability';
+import QualityPage from './pages/feature/quality';
+import CollaborationPage from './pages/feature/collaboration';
+import EfficiencyPage from './pages/feature/efficiency';
+import AdvantagesPage from './pages/article/advantages';
+import AutomationPage from './pages/article/automation';
+import BuildRaportPage from './pages/article/build-raport';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -41,6 +50,15 @@ root.render(
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/feature/productivity" element={<ProductivityPage />} />
+        <Route path="/feature/reduced-downtime" element={<DowntimePage />} />
+        <Route path="/feature/scalability" element={<ScalabilityPage />} />
+        <Route path="/feature/quality" element={<QualityPage />} />
+        <Route path="/feature/collaboration" element={<CollaborationPage />} />
+        <Route path="/feature/cost-efficiency" element={<EfficiencyPage />} />
+        <Route path="/blog/advantages" element={<AdvantagesPage />} />
+        <Route path="/blog/automation" element={<AutomationPage />} />
+        <Route path="/blog/build_raport" element={<BuildRaportPage />} />
 
         <Route path="/agency" element={<Agency />} />
         <Route path="/portfolio" element={<Portfolio />} />

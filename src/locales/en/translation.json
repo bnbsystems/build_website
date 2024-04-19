@@ -30,27 +30,27 @@
         "key_features": {
             "title": "Key features",
             "subtitle": "Develop games faster by optimizing CI/CD pipeline and developement process.",
-            "feature_1": {
+            "productivity": {
                 "title": "Productivity",
                 "description": "Automate boring, repetitive tasks by integrating CI/CD piepline into your projects."
             },
-            "feature_2": {
+            "downtime": {
                 "title": "Reduced downtime",
                 "description": "Allow developers to build projects in consistent and reproducible build environment outside of their personal workspace."
             },
-            "feature_3": {
+            "scalability": {
                 "title": "Scalability",
                 "description": "Scale build infrastructure according to your needs. Build your Godot projects in parallel for different platforms."
             },
-            "feature_4": {
+            "quality": {
                 "title": "Enhanced game quality",
                 "description": "Increase quality of your games by frequent builds and automated tests, allowing for faster bug fixes."
             },
-            "feature_5": {
+            "collaboration": {
                 "title": "Collaboration",
                 "description": "Get notification on build status and new releases. Promote communication and code reviews in centrilized platform which provides detailed logs and audit trails of deployments."
             },
-            "feature_6": {
+            "efficiency": {
                 "title": "Cost efficiency",
                 "description": "Reduce infrastructure costs. Pay only for what you need."
             }
@@ -58,15 +58,15 @@
         "articles": {
             "title": "Articles",
             "subtitle": "Discover the power of our innovative solutions and elevate your developement experience.",
-            "article_1":{
+            "advantages":{
                 "title": "Benefits of build servers",
                 "description":"Learn about the adventages of using build servers in development process."
             },
-            "article_2":{
+            "automation":{
                 "title": "Automated deployments",
                 "description":"Explore how automated deployments can elevate game quality."
             },
-            "article_3":{
+            "build_raport":{
                 "title": "Get feedback, improve communication",
                 "description":"Improve teamwork and communication by getting build feedback and error alerts."
             }
@@ -81,7 +81,9 @@
                 "message": "Message",
                 "consent_to_contact": "I consent to the transmission of commercial information by ..., at the email address I have provided.",
                 "send": "Send message"
-            }
+            },
+            "success_message": "Contact form was sent successfuly.",
+            "error_message": "Error! Try again later."
         }
     },
     "privacy_policy_page": {

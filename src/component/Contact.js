@@ -122,8 +122,8 @@ export default function Contact() {
                                     <Row>
                                         <div className="col-12 mt-3 text-end">
                                             <p style={submitError ? {color: "red"}: {color: "green"}}>
-                                                {wasSubmited && "Contact form was sent successfuly."}
-                                                {submitError && "Error! Try again later."}
+                                                {wasSubmited && t('landing_page.contact_form.success_message')}
+                                                {submitError && t('landing_page.contact_form.error_message')}
                                             </p>
                                         </div>
                                     </Row>
@@ -145,7 +145,7 @@ export default function Contact() {
 
                                     <div className="flex-1 ms-3">
                                         <h5 className="mb-2">{t('common.phone')}</h5>
-                                        {/* <Link to="tel:+152534-468-854" className="text-muted">+152 534-468-854</Link> */}
+                                        {/* <Link to="tel:<*insert-phone*>" className="text-muted"></Link> */}
                                     </div>
                                 </div>
 
@@ -156,7 +156,7 @@ export default function Contact() {
 
                                     <div className="flex-1 ms-3">
                                         <h5 className="mb-2">{t('common.email')}</h5>
-                                        {/* <Link to="mailto:contact@example.com" className="text-muted">contact@example.com</Link> */}
+                                        {/* <Link to="mailto:<*insert-email*>" className="text-muted"></Link> */}
                                     </div>
                                 </div>
 
@@ -167,7 +167,7 @@ export default function Contact() {
 
                                     <div className="flex-1 ms-3">
                                         <h5 className="mb-2">{t('common.location')}</h5>
-                                        {/* <p className="text-muted mb-2">C/54 Northwest Freeway, Suite 558, Houston, USA 485</p> */}
+                                        {/* <p className="text-muted mb-2"></p> */}
                                     </div>
                                 </div>
                             </div>

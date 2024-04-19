@@ -9,28 +9,34 @@ import { useTranslation } from "react-i18next";
 export default function Feature() {
     const services = [
         {
-            id: 'feature_1',
+            id: 'productivity',
             icon: 'airplay',
+            link: '/feature/productivity'
         },
         {
-            id: 'feature_2',
+            id: 'downtime',
             icon: 'circle-layer',
+            link: '/feature/reduced-downtime'
         },
         {
-            id: 'feature_3',
+            id: 'scalability',
             icon: 'fire',
+            link: '/feature/scalability'
         },
         {
-            id: 'feature_4',
+            id: 'quality',
             icon: 'flip-h',
+            link: '/feature/quality'
         }, 
         {
-            id: 'feature_5',
+            id: 'collaboration',
             icon: 'mountains',
+            link: '/feature/collaboration'
         },
         {
-            id: 'feature_6',
+            id: 'efficiency',
             icon: 'wind',
+            link: '/feature/cost-efficiency'
         },
     ]
 
@@ -54,7 +60,7 @@ export default function Feature() {
                                     <li className="mb-1"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Digital Marketing Solutions for Tomorrow</li>
                                     <li className="mb-1"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Create your own skin to match your brand</li>
                                 </ul> */}
-                                <Link to="#" className="mt-3 text-primary">{t('common.learn_more')}<i className="uil uil-angle-right-b"></i></Link>
+                                {/* <Link to="#" className="mt-3 text-primary">{t('common.learn_more')}<i className="uil uil-angle-right-b"></i></Link> */}
                             </div>
                         </Col>
                     </Row>
@@ -70,7 +76,7 @@ export default function Feature() {
                                     <li className="mb-1"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Digital Marketing Solutions for Tomorrow</li>
                                     <li className="mb-1"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Create your own skin to match your brand</li>
                                 </ul> */}
-                                <Link to="#" className="mt-3 text-primary">{t('common.learn_more')}<i className="uil uil-angle-right-b"></i></Link>
+                                {/* <Link to="#" className="mt-3 text-primary">{t('common.learn_more')}<i className="uil uil-angle-right-b"></i></Link> */}
                             </div>
                         </Col>
 
@@ -98,9 +104,9 @@ export default function Feature() {
                                         <i className={"h4 mb-0 uil uil-" + item.icon}></i>
                                     </div>
                                     <div className="content">
-                                        <Link to="#" className="title text-dark h5">{t(`landing_page.key_features.${item.id}.title`)}</Link>
+                                        <Link to={item.link} className="title text-dark h5">{t(`landing_page.key_features.${item.id}.title`)}</Link>
                                         <p className="text-muted mt-3">{t(`landing_page.key_features.${item.id}.description`)}</p>
-                                        <Link to="#" className="text-dark title">{t('common.read_more')}<i className="uil uil-arrow-right"></i> </Link>
+                                        <Link to={item.link} className="text-dark title">{t('common.read_more')}<i className="uil uil-arrow-right"></i> </Link>
                                     </div>
                                 </Card>
                             </Col>
