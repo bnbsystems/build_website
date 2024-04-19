@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.83d92372.css",
-    "main.js": "/static/js/main.fe74dca7.js",
+    "main.css": "/static/css/main.fccde854.css",
+    "main.js": "/static/js/main.85bc8b14.js",
     "static/media/materialdesignicons-webfont.svg?v=3.5.94": "/static/media/materialdesignicons-webfont.650dd4760015711234df.svg",
     "static/media/server-2.jpg": "/static/media/server-2.59cc625e29cf949f7aa9.jpg",
     "static/media/team.jpg": "/static/media/team.ff4ecf95036655d9058f.jpg",
@@ -53,11 +53,11 @@
     "index.html": "/index.html",
     "static/media/logo-white.svg": "/static/media/logo-white.9e627a8787f13bfffedb.svg",
     "static/media/logo.svg": "/static/media/logo.aaea9ce0fede04e8c1c4.svg",
-    "main.83d92372.css.map": "/static/css/main.83d92372.css.map",
-    "main.fe74dca7.js.map": "/static/js/main.fe74dca7.js.map"
+    "main.fccde854.css.map": "/static/css/main.fccde854.css.map",
+    "main.85bc8b14.js.map": "/static/js/main.85bc8b14.js.map"
   },
   "entrypoints": [
-    "static/css/main.83d92372.css",
-    "static/js/main.fe74dca7.js"
+    "static/css/main.fccde854.css",
+    "static/js/main.85bc8b14.js"
   ]
 }
