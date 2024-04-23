@@ -1,6 +1,7 @@
 ---
 template: "default"
 title: "FAQ - Frequently Asked Questions"
+description: "FAQ - Frequently Asked Questions"
 slug: "faq"
 date: "2024-04-23"
 ---

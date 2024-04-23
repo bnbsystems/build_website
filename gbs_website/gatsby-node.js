@@ -25,20 +25,20 @@ exports.createPages = async ({ graphql, actions }) => {
           // case 'blog':
           //     component = path.resolve('./src/templates/blogTemplate.js');
           //     break;
-          // case 'article':
-          //     component = path.resolve('./src/templates/articleTemplate.js');
-          //     break;
-          // // Add cases for other templates
-          default:
+          case 'feature':
+              component = path.resolve('./src/templates/feature-template.js');
+              break;
+          // Add cases for other templates
+          case 'default':
               component = path.resolve('./src/templates/default-template.js');
+              break;
       }
 
       createPage({
-          path: slug,
+          path: template === 'default' ? slug : `${template}/${slug}`,
           component,
           context: {
-              // Additional context if needed
-              slug,
+              slug
           },
       });
   });

@@ -7,8 +7,9 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
-function Seo({ description, title, children }) {
+function Seo({ description, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -27,7 +28,7 @@ function Seo({ description, title, children }) {
   const defaultTitle = site.siteMetadata?.title
 
   return (
-    <>
+    <Helmet>
       <title>{defaultTitle ? `${title} | ${defaultTitle}` : title}</title>
       <meta name="description" content={metaDescription} />
       <meta property="og:title" content={title} />
@@ -37,8 +38,8 @@ function Seo({ description, title, children }) {
       <meta name="twitter:creator" content={site.siteMetadata?.author || ``} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
-      {children}
-    </>
+
+    </Helmet>
   )
 }
 

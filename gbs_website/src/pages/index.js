@@ -7,9 +7,8 @@ import BackgroundImage from '../assets/images/bg/marketing-shape.png';
 // import CelebrationImage from '../../assets/images/svg/celebration.svg';
 import ServerImage from '../assets/images/main_page/server.jpg'
 import { useTranslation } from 'react-i18next';
-
+import Seo from '../components/seo';
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 import Contact from "../components/Contact";
 import FeaturedArticles from "../components/featured-articles";
 import Feature from "../components/Feature";
@@ -19,8 +18,8 @@ const IndexPage = () => {
   const { t } = useTranslation()
   return (
     <GoogleReCaptchaProvider reCaptchaKey={process.env.REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY}>
-  <Layout>
-    
+    <Layout>
+    <Seo title="Home" />
     <section className="bg-home bg-soft-primary d-flex align-items-center" style={{ background: `url(${BackgroundImage}) center center`, height: "auto" }} id="home">
                     <Container>
                         <Row className="mt-5 pt-5 justify-content-center">
@@ -98,6 +97,5 @@ const IndexPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
 
 export default IndexPage

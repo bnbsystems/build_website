@@ -1,0 +1,16 @@
+{
+    "meta":{
+        "title": "Godot Build Server",
+        "description": "Optimize developement process and introduce CI/CD pipeline to your Godot Projects.",
+        "author": "",
+        "siteUrl": "https://build.metrosolid.com/"
+    },
+    "options": {
+        "name": "Godot Build Server",
+        "short_name": "GBS",
+        "start_url": "/",
+        "background_color": "#663399",
+        "display": "minimal-ui",
+        "icon": "src/images/logo32.png"
+      }
+}

@@ -1,6 +1,7 @@
 ---
 template: "default"
 title: "Terms and Conditions"
+description: "Terms and Conditions"
 slug: "terms"
 date: "2024-04-23"
 ---
