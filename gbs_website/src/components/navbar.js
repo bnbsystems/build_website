@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-scroll';
-import { Link as Link2, useLocation } from 'react-router-dom';
+import { Link } from 'gatsby';
 
 import * as Icon from 'react-feather';
 import {
@@ -10,18 +9,17 @@ import {
     Nav,
     Collapse
 } from "reactstrap";
-import LanguagePicker from './LanguagePicker';
+import LanguagePicker from './language-picker';
 import { useTranslation } from 'react-i18next';
-import { HashLink } from 'react-router-hash-link';
 // Import Logo
 // import logodark from "../assets/images/logo-dark.png";
 // import logolight from "../assets/images/logo-light.png";
 
 
-export default function NavbarPage() {
+export default function Navbar() {
     const [isOpen, setMenu] = useState(true)
     const { t } = useTranslation()
-    const location = useLocation()
+    // const location = useLocation()
     window.addEventListener("scroll", windowScroll);
 
     function windowScroll() {
@@ -41,19 +39,19 @@ export default function NavbarPage() {
 
     const routes = [
         {
-            to: "home",
+            to: "/#home",
             name: t('navbar.home')
         },
         {
-            to: "features",
+            to: "/#features",
             name: t('navbar.features')
         },
         {
-            to: "blog",
+            to: "/#blog",
             name: t('navbar.articles')
         },
         {
-            to: "contact",
+            to: "/#contact",
             name: t('navbar.contact')
         },
     ]
@@ -64,19 +62,19 @@ export default function NavbarPage() {
     </NavItem>)
     }
 
-    const mapRouteToRouterLink = (route) => {
-        return (<NavItem>
-        <HashLink activeClass="active" spy={true} to={`/#${route.to}`} className="nav-link">{route.name}</HashLink>
-    </NavItem>)
-    }
+    // const mapRouteToRouterLink = (route) => {
+    //     return (<NavItem>
+    //     <HashLink activeClass="active" spy={true} to={`/#${route.to}`} className="nav-link">{route.name}</HashLink>
+    // </NavItem>)
+    // }
 
     return (
         <>
             <nav id="navbar" className="navbar navbar-expand-lg fixed-top sticky">
                 <div className="container">
-                    <Link2 to="/">
+                    <Link to="/">
                         <div class="matrix-logo"  alt="" />
-                    </Link2>
+                    </Link>
                     <NavbarToggler className="navbar-toggler" onClick={toggleMenu}>
                         <Icon.Menu />
                     </NavbarToggler>
@@ -90,7 +88,7 @@ export default function NavbarPage() {
                             {/* <NavItem>
                                 <Link activeClass="active" spy={true} smooth={true} duration={500} to="review" className="nav-link" href="#">Review</Link>
                             </NavItem> */}
-                            {location.pathname === '/' ? routes?.map(mapRouteToScrollLink) : routes?.map(mapRouteToRouterLink)}
+                            {routes?.map(mapRouteToScrollLink)}
                             <LanguagePicker />
                         </Nav>
 

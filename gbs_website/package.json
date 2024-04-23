@@ -21,6 +21,7 @@
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
     "react-google-recaptcha-v3": "^1.10.1",
+    "react-helmet": "^6.1.0",
     "react-i18next": "^14.1.0",
     "react-id-swiper": "^4.0.0",
     "react-modal-video": "^2.0.0",
