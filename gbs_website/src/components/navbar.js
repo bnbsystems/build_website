@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'gatsby';
 
 import * as Icon from 'react-feather';
@@ -20,19 +20,23 @@ export default function Navbar() {
     const [isOpen, setMenu] = useState(true)
     const { t } = useTranslation()
     // const location = useLocation()
-    window.addEventListener("scroll", windowScroll);
+    const [isScrolled, setIsScrolled] = useState(false);
 
-    function windowScroll() {
-        const navbar = document.getElementById("navbar");
-        if (
-            document.body.scrollTop >= 50 ||
-            document.documentElement.scrollTop >= 50
-        ) {
-            navbar.classList.add("nav-sticky");
+    const handleScroll = () => {
+        if (window.scrollY >= 50) {
+            setIsScrolled(true);
         } else {
-            navbar.classList.remove("nav-sticky");
+            setIsScrolled(false);
         }
-    }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []); 
+
     const toggleMenu = () => {
         setMenu(!isOpen)
     }
@@ -70,7 +74,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav id="navbar" className="navbar navbar-expand-lg fixed-top sticky">
+            <nav id="navbar" className={`navbar navbar-expand-lg fixed-top sticky ${isScrolled ? "nav-sticky" : ""}`}>
                 <div className="container">
                     <Link to="/">
                         <div class="matrix-logo"  alt="" />
