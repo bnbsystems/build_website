@@ -18,7 +18,7 @@ export const featurePageQuery = graphql`
   }
 `
 
-const FeatureTemplatePage = ({data}) => {
+const FeaturePageTemplate = ({data}) => {
     const { frontmatter, html } = data.markdownRemark;
 
     return (
@@ -49,4 +49,4 @@ const FeatureTemplatePage = ({data}) => {
     )
 }
 
-export default FeatureTemplatePage;
+export default FeaturePageTemplate;

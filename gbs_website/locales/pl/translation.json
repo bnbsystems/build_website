@@ -67,7 +67,7 @@
                 "description":"Odkryj, w jaki sposób zautomatyzowane wdrożenia mogą podnieść jakość gier."
             },
             "build_raport":{
-                "title": "Otrzymuj raporty z procesu budowania, popraw komunikację",
+                "title": "Raporty z procesu budowania",
                 "description":"Popraw współpracę zespołu oraz komunikację poprzez otrzymywanie informacji zwrotnych na temat budowy i alertów o błędach."
             }
         },

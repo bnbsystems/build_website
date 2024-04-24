@@ -26,9 +26,9 @@ exports.createPages = async ({ graphql, actions }) => {
 
       let component;
       switch (template) {
-          // case 'blog':
-          //     component = path.resolve('./src/templates/blogTemplate.js');
-          //     break;
+          case 'blog':
+              component = path.resolve('./src/templates/blog-template.js');
+              break;
           case 'feature':
               component = path.resolve('./src/templates/feature-template.js');
               break;
