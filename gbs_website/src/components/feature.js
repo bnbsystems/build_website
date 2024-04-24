@@ -5,38 +5,40 @@ import { Link } from "gatsby";
 import ServerImage from '../assets/images/main_page/server-2.jpg'
 import TeamImage from '../assets/images/main_page/team.jpg'
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 export default function Feature() {
+    const currentLanguage = i18next.language;
     const services = [
         {
             id: 'productivity',
             icon: 'airplay',
-            link: '/feature/productivity'
+            link: `/feature/productivity/${currentLanguage}`
         },
         {
             id: 'downtime',
             icon: 'circle-layer',
-            link: '/feature/reduced-downtime'
+            link: `/feature/reduced-downtime/${currentLanguage}`
         },
         {
             id: 'scalability',
             icon: 'fire',
-            link: '/feature/scalability'
+            link: `/feature/scalability/${currentLanguage}`
         },
         {
             id: 'quality',
             icon: 'flip-h',
-            link: '/feature/quality'
+            link: `/feature/quality/${currentLanguage}`
         }, 
         {
             id: 'collaboration',
             icon: 'mountains',
-            link: '/feature/collaboration'
+            link: `/feature/collaboration/${currentLanguage}`
         },
         {
             id: 'efficiency',
             icon: 'wind',
-            link: '/feature/cost-efficiency'
+            link: `/feature/cost-efficiency/${currentLanguage}`
         },
     ]
 

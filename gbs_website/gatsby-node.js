@@ -9,6 +9,7 @@ exports.createPages = async ({ graphql, actions }) => {
                         frontmatter {
                             template
                             slug
+                            language
                         }
                     }
                 }
@@ -19,6 +20,9 @@ exports.createPages = async ({ graphql, actions }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       const template = node.frontmatter.template;
       const slug = node.frontmatter.slug;
+      const language = node.frontmatter.language;
+      const nodePath = template === 'default' ? `${slug}/${language}`: `${template}/${slug}/${language}`;
+
 
       let component;
       switch (template) {
@@ -29,16 +33,16 @@ exports.createPages = async ({ graphql, actions }) => {
               component = path.resolve('./src/templates/feature-template.js');
               break;
           // Add cases for other templates
-          case 'default':
+          default:
               component = path.resolve('./src/templates/default-template.js');
-              break;
       }
 
       createPage({
-          path: template === 'default' ? slug : `${template}/${slug}`,
+          path: nodePath,
           component,
           context: {
-              slug
+              slug,
+              language
           },
       });
   });

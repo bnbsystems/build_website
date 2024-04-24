@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row } from "reactstrap";
-import { Layout } from "react-feather";
 import { graphql } from "gatsby";
 import Seo from "../components/seo";
+import Layout from "../components/layout";
 
 export const featurePageQuery = graphql`
-  query FeaturePageTemplateQuery($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+  query FeaturePageTemplateQuery($slug: String!, $language: String!) {
+    markdownRemark(  frontmatter: { slug: { eq: $slug }, language: { eq: $language } }) {
       html
       frontmatter {
         slug
@@ -36,7 +36,7 @@ const FeatureTemplatePage = ({data}) => {
                         </Row>
                     </Container>
             </section>
-            {/* <section className="mb-5">
+            <section className="mb-5">
                 <Container>
                         <Row className=" justify-content-center">
                             <div className="col-lg-12">
@@ -44,7 +44,7 @@ const FeatureTemplatePage = ({data}) => {
                             </div>
                         </Row>
                     </Container>
-            </section> */}
+            </section>
             </Layout>
     )
 }

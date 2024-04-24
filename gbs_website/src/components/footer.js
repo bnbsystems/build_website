@@ -3,9 +3,11 @@ import { Col, Container, Card, Row } from 'reactstrap';
 import { Link } from "gatsby";
 import * as Icon from 'react-feather';
 import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 
 export default function Footer() {
         const { t } = useTranslation()
+        const language = i18next.language
         const [arrow, setArrow] = useState(false);
 
         const handleScroll = () => {
@@ -30,7 +32,7 @@ export default function Footer() {
         return (
             <>
                 {/* Back to top */}
-                <Link to="/#home" style={{ display: arrow === true ? 'block' : 'none' }} id="back-to-top" className="back-to-top rounded-pill fs-5"><Icon.ArrowUp className="fea icon-sm icons align-middle" /></Link>
+                <a onClick={() => {window.scrollTo({top:0, behavior: 'smooth'})}} style={{ display: arrow === true ? 'block' : 'none' }} id="back-to-top" className="back-to-top rounded-pill fs-5"><Icon.ArrowUp className="fea icon-sm icons align-middle" /></a>
                 {/* Back to top  */}
 
                 {/* Footer Start  */}
@@ -98,9 +100,9 @@ export default function Footer() {
 
                                 <Col lg={6} md={6} sm={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
                                     <ul className="list-unstyled footer-list terms-service mb-0">
-                                        <li className="list-inline-item mb-0"><Link to="/privacy-policy" className="text-foot me-2">{t('footer.privacy')}</Link></li>
-                                        <li className="list-inline-item mb-0"><Link to="/terms" className="text-foot me-2">{t('footer.terms')}</Link></li>
-                                        <li className="list-inline-item mb-0"><Link to="/faq" className="text-foot me-2">{t('footer.faq')}</Link></li>
+                                        <li className="list-inline-item mb-0"><Link to={`/privacy-policy/${language}`} className="text-foot me-2">{t('footer.privacy')}</Link></li>
+                                        <li className="list-inline-item mb-0"><Link to={`/terms/${language}`} className="text-foot me-2">{t('footer.terms')}</Link></li>
+                                        <li className="list-inline-item mb-0"><Link to={`/faq/${language}`} className="text-foot me-2">{t('footer.faq')}</Link></li>
                                         {/* <li className="list-inline-item mb-0"><Link to="#" className="text-foot">Contact</Link></li> */}
                                     </ul>
                                 </Col>

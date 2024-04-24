@@ -8,6 +8,9 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 const seoSettings = require("./seo-settings.json")
 module.exports = {

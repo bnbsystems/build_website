@@ -5,8 +5,8 @@ import { Container, Row } from 'reactstrap';
 import Seo from '../components/seo';
 
 export const pageQuery = graphql`
-  query DefaultPageTemplateQuery($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+  query DefaultPageTemplateQuery($slug: String!, $language: String!) {
+    markdownRemark(  frontmatter: { slug: { eq: $slug }, language: { eq: $language } }) {
       html
       frontmatter {
         slug
