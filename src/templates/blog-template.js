@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { Container, Row, Col } from "reactstrap";
 import Layout from "../components/layout";
 import Seo from '../components/seo';
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export const blogPostPageQuery = graphql`
   query BlogPostPageTemplateQuery($slug: String!, $language: String!) {
@@ -13,6 +14,12 @@ export const blogPostPageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        featuredImageAlt
+        featuredImage {
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH)
+            }
+        }
       }
     }
   }
@@ -20,6 +27,8 @@ export const blogPostPageQuery = graphql`
 
 const BlogPageTemplate = ({data}) => {
     const { frontmatter, html } = data.markdownRemark;
+    let featuredImg = getImage(frontmatter.featuredImage?.childImageSharp?.gatsbyImageData)
+    
     return (
         <Layout>
             <Seo title={frontmatter.title} description={frontmatter.description} ogType={"article"}/>
@@ -27,7 +36,7 @@ const BlogPageTemplate = ({data}) => {
             <Container className="mt-100 mt-60">
                     <Row className="align-items-center">
                         <Col lg={6} md={6}>
-                            {/* <img src={image} className="img-fluid shadow-md rounded-md" alt={imageAlt} /> */}
+                            <GatsbyImage image={featuredImg} className="img-fluid shadow-md rounded-md" alt={frontmatter.featuredImageAlt} />
                         </Col>
 
                         <Col lg={6} md={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
