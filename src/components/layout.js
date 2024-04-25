@@ -6,7 +6,6 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import "../assets/css/materialdesignicons.min.css";
 import "../assets/scss/themes.scss";
 import Navbar from "./navbar";

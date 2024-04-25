@@ -32,7 +32,7 @@ export default function Footer() {
         return (
             <>
                 {/* Back to top */}
-                <a onClick={() => {window.scrollTo({top:0, behavior: 'smooth'})}} style={{ display: arrow === true ? 'block' : 'none' }} id="back-to-top" className="back-to-top rounded-pill fs-5"><Icon.ArrowUp className="fea icon-sm icons align-middle" /></a>
+                <a href="#" onClick={() => {window.scrollTo({top:0, behavior: 'smooth'})}} style={{ display: arrow === true ? 'block' : 'none' }} id="back-to-top" className="back-to-top rounded-pill fs-5"><Icon.ArrowUp className="fea icon-sm icons align-middle" /></a>
                 {/* Back to top  */}
 
                 {/* Footer Start  */}

@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 
 import * as Icon from 'react-feather';
 import {
-    NavbarBrand,
     NavbarToggler,
     NavItem,
     Nav,
@@ -19,7 +18,6 @@ import { useTranslation } from 'react-i18next';
 export default function Navbar() {
     const [isOpen, setMenu] = useState(true)
     const { t } = useTranslation()
-    // const location = useLocation()
     const [isScrolled, setIsScrolled] = useState(false);
 
     const handleScroll = () => {

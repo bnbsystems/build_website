@@ -1,6 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import { Col, Container, Row } from "reactstrap";
 
 import BackgroundImage from '../assets/images/bg/marketing-shape.png';
@@ -9,9 +7,9 @@ import ServerImage from '../assets/images/main_page/server.jpg'
 import { useTranslation } from 'react-i18next';
 import Seo from '../components/seo';
 import Layout from "../components/layout"
-import Contact from "../components/Contact";
+import Contact from "../components/contact";
 import FeaturedArticles from "../components/featured-articles";
-import Feature from "../components/Feature";
+import Feature from "../components/feature";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 const IndexPage = () => {
