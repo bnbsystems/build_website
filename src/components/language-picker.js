@@ -2,16 +2,18 @@ import i18next from 'i18next';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { navigate } from "gatsby";
+import { useLocation  } from '@gatsbyjs/reach-router';
 
 export default function LanguagePicker() {
     const { i18n } = useTranslation();
-    const currentUrl = window.location.href;
+    const location = useLocation()
+    const currentUrl = location.pathname
     const currentLanguage = i18next.language
 
     const changeLanguage = (e) => {
       i18n.changeLanguage(e.target.value);
       const urlLanguageSegment = `/${currentLanguage}/`
-      if(currentUrl.endsWith(urlLanguageSegment)){
+      if(currentUrl.endsWith(urlLanguageSegment) && currentUrl !== undefined && currentUrl !== null && currentUrl !== '' ){
         navigate(currentUrl.replace(urlLanguageSegment, `/${e.target.value}/`))
       }
     };
