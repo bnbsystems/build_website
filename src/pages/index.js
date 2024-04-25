@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 import Seo from '../components/seo';
 import Layout from "../components/layout"
 import Contact from "../components/contact";
-import FeaturedArticles from "../components/featured-articles";
+import BlogPostList from "../components/blog-post-list";
 import Feature from "../components/feature";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
@@ -82,7 +82,7 @@ const IndexPage = () => {
                 </section>
                 
                 <Feature />
-                <FeaturedArticles />
+                <BlogPostList />
                 <Contact />
                 
   </Layout>

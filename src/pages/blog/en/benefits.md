@@ -4,9 +4,9 @@ language: "en"
 slug: "benefits"
 title: "Benefits of build servers"
 description: "Learn about the adventages of using build servers in development process."
-date: "2024-04-23"
 featuredImage: "../../../assets/images/blog/1.jpg"
 featuredImageAlt: ""
+date: "2024-04-23"
 ---
 
 #### The Benefits of Using Build Servers for Game Development

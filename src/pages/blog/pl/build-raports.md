@@ -6,7 +6,7 @@ title: "Raporty z procesu budowania"
 description: "Popraw współpracę zespołu oraz komunikację poprzez otrzymywanie informacji zwrotnych na temat budowy i alertów o błędach."
 featuredImage: "../../../assets/images/blog/3.jpg"
 featuredImageAlt: ""
-date: "2024-04-23"
+date: "2024-04-21"
 ---
 
 #### Wzmacnianie Współpracy i Komunikacji

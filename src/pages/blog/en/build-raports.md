@@ -4,9 +4,9 @@ language: "en"
 slug: "build-raports"
 title: "Get feedback, improve communication"
 description: "Improve teamwork and communication by getting build feedback and error alerts."
-date: "2024-04-23"
 featuredImage:  "../../../assets/images/blog/3.jpg"
 featuredImageAlt: ""
+date: "2024-04-21"
 ---
 
 #### Strengthen Collaboration and Communication

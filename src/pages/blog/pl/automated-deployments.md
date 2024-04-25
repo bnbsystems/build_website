@@ -6,7 +6,7 @@ title: "Zautomatyzowane wdrożenia"
 description: "Odkryj, w jaki sposób zautomatyzowane wdrożenia mogą podnieść jakość gier."
 featuredImage:  "../../../assets/images/blog/2.jpg"
 featuredImageAlt: ""
-date: "2024-04-23"
+date: "2024-04-22"
 ---
 
 #### Podnoszenie Jakości Gier poprzez Zautomatyzowane Wdrożenia

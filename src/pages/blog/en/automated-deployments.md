@@ -4,9 +4,9 @@ language: "en"
 slug: "automation"
 title: "Automated deployments"
 description: "Explore how automated deployments can elevate game quality."
-date: "2024-04-23"
 featuredImage: "../../../assets/images/blog/2.jpg"
 featuredImageAlt: ""
+date: "2024-04-22"
 ---
 
 #### Enhancing Game Quality with Automated Deployments
