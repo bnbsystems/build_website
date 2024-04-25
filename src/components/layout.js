@@ -9,7 +9,6 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import "../assets/css/materialdesignicons.min.css";
 import "../assets/scss/themes.scss";
-import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 import Navbar from "./navbar";
 import { I18nextProvider } from 'react-i18next';
 import i18n from '../../i18n';
