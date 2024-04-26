@@ -4,10 +4,12 @@ import { Link } from "gatsby";
 import * as Icon from 'react-feather';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
+import formatLanguage from '../util/format-language';
 
 export default function Footer() {
         const { t } = useTranslation()
-        const language = i18next.language
+        const language = formatLanguage(i18next.language)
+
         const [arrow, setArrow] = useState(false);
 
         const handleScroll = () => {

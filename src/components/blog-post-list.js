@@ -4,6 +4,8 @@ import { Link, StaticQuery, graphql } from "gatsby";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import formatLanguage from "../util/format-language";
+
 
 export default function BlogPostList(){
     return (
@@ -43,7 +45,7 @@ export default function BlogPostList(){
 
 export function BlogPostListTemplate({ data }) {
     const { t } = useTranslation()
-    const currentLanguage = i18next.language;
+    const currentLanguage = formatLanguage(i18next.language)
     const edges = data.allMarkdownRemark.edges
     const nodes = edges.filter((edge) => edge.node.frontmatter.language === currentLanguage).map((edge) => edge.node)
     
