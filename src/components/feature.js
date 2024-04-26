@@ -6,9 +6,10 @@ import ServerImage from '../assets/images/main_page/server-2.jpg'
 import TeamImage from '../assets/images/main_page/team.jpg'
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
+import formatLanguage from "../util/format-language";
 
 export default function Feature() {
-    const currentLanguage = i18next.language;
+    const currentLanguage = formatLanguage(i18next.language)
     const services = [
         {
             id: 'productivity',
