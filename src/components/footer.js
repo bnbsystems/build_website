@@ -9,6 +9,7 @@ import formatLanguage from '../util/format-language';
 export default function Footer() {
         const { t } = useTranslation()
         const language = formatLanguage(i18next.language)
+
         const [arrow, setArrow] = useState(false);
 
         const handleScroll = () => {

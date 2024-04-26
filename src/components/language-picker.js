@@ -5,6 +5,7 @@ import { navigate } from "gatsby";
 import { useLocation  } from '@gatsbyjs/reach-router';
 import formatLanguage from '../util/format-language';
 
+
 export default function LanguagePicker() {
     const { i18n } = useTranslation();
     const location = useLocation()

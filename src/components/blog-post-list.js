@@ -6,6 +6,7 @@ import i18next from "i18next";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import formatLanguage from "../util/format-language";
 
+
 export default function BlogPostList(){
     return (
         <StaticQuery 
